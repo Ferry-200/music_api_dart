@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
-import 'package:music_api/http/error_interceptor.dart';
 import 'package:music_api/http/token_interceptor.dart';
 
 import '../dio/dio.dart';
@@ -39,10 +37,10 @@ class HttpDio {
       _dio = Dio(options);
 
       // 添加拦截器
-      if (kDebugMode == true) {
-        //只在测试的时候添加
-        _dio?.interceptors.add(LogInterceptor(request: true, requestHeader: true, responseHeader: true, responseBody: true, requestBody: true));
-      }
+      // if (kDebugMode == true) {
+      //   //只在测试的时候添加
+      //   _dio?.interceptors.add(LogInterceptor(request: true, requestHeader: true, responseHeader: true, responseBody: true, requestBody: true));
+      // }
       // _dio?.interceptors.add(ErrorInterceptor());
       _dio?.interceptors.add(TokenInterceptor());
     }
@@ -75,6 +73,7 @@ class HttpDio {
         client.badCertificateCallback = (X509Certificate cert, String host, int port) {
           return true;
         };
+        return client;
       };
     }
   }
@@ -156,7 +155,7 @@ class HttpDio {
     _dio?.options.headers.addAll(headers ?? {});
     _dio?.options.responseType = ResponseType.json;
 
-    await _dio?.put(
+    return await _dio?.put(
       path,
       data: data,
       queryParameters: params,

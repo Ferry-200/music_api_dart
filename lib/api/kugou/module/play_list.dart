@@ -33,7 +33,6 @@ Future<Answer> _playListInfoAll(Map params, List<Cookie> cookie) {
       var list = data["list"]["list"]["info"] as List?;
       var total = data["list"]["list"]["total"];
       var pagesize = data["list"]["pagesize"];
-      var page = data["list"]["page"];
 
       var size = getPageSize(total, pagesize);
 

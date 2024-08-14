@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
-import 'package:flutter/material.dart';
 import 'package:music_api/entity/music_entity.dart';
 import 'package:music_api/http/http_dio.dart';
 import 'package:music_api/utils/crypto.dart';
@@ -116,8 +115,6 @@ Future<Answer> eApiRequest({
     ans = ans.copy(code: ans.code > 100 && ans.code < 600 ? ans.code : 400);
     return ans;
   }).catchError((e, s) {
-    debugPrint("request error $e");
-    debugPrint(s.toString());
     return Answer(site: MusicSite.Netease, code: 502, msg: e.toString(), data: {'code': 502, 'msg': e.toString()});
   });
 }
@@ -159,8 +156,6 @@ Future<Answer> request(
     ans = ans.copy(code: ans.code > 100 && ans.code < 600 ? ans.code : 400);
     return ans;
   }).catchError((e, s) {
-    debugPrint(e.toString());
-    debugPrint(s.toString());
     return Answer(site: MusicSite.Netease, code: 502, data: {'code': 502, 'msg': e.toString()});
   });
 }

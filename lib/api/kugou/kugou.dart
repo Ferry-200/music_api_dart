@@ -3,7 +3,6 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart';
 import 'package:crypto/crypto.dart';
-import 'package:flutter/foundation.dart';
 import 'package:music_api/entity/music_entity.dart';
 import 'package:music_api/http/http_dio.dart';
 import 'package:music_api/utils/answer.dart';
@@ -252,9 +251,6 @@ Future<Answer> _get(String path, {Map<String, dynamic>? params, List<Cookie> coo
         return Future.value(Answer(site: MusicSite.KuGou, code: 500, data: {'code': value?.statusCode, 'msg': value}));
       }
     } catch (e) {
-      if (kDebugMode) {
-        print(e);
-      }
       return Future.value(const Answer(site: MusicSite.KuGou, code: 500, data: {'code': 500, 'msg': "酷狗对象转换异常"}));
     }
   });

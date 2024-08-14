@@ -201,7 +201,6 @@ Future<Answer> _musicInfo5(Map params, List<Cookie> cookie) {
 //
 ///歌词信息
 Future<Answer> _lrc(Map params, List<Cookie> cookie) {
-  https: //m3ws.kugou.com/api/v1/krc/get_lyrics?keyword=郑少秋 - 笑看风云&hash=6340EBA91E893EED118FF7400F2AA3CB&timelength=262000&srcappid=2919&clientver=20000&clienttime=1679561402031&mid=1679561402031&uuid=1679561402031&dfid=-&signature=1BA519D66EF9FA87F931E10CEBF869CA
   String hash = params["hash"];
 
   var data = {
@@ -256,7 +255,6 @@ Future<Answer> _krc(Map params, List<Cookie> cookie) {
 }
 
 Future<Answer> _krcInfo(Map params, List<Cookie> cookie) {
-  http: //lyrics.kugou.com/download?ver=1&client=pc&id=%s&accesskey=%s&fmt=krc&charset=utf8
   String id = params["id"];
   String accesskey = params["accesskey"];
   var data = {
