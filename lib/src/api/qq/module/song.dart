@@ -235,12 +235,7 @@ Future<Answer> _songListen(Map params, List<Cookie> cookie) {
     "https://u.y.qq.com/cgi-bin/musicu.fcg",
     params: data,
     cookie: cookie,
-  ).then((value) {
-    print(value.data['req']["data"]['freeflowsip'][0] + value.data['queryvkey']['data']["midurlinfo"][0]['purl'] + '&fromtag=77');
-    print(value.data['req']["data"]['freeflowsip'][0] + value.data['req_0']['data']["midurlinfo"][0]['purl'] + '&fromtag=77');
-
-    return value;
-  });
+  );
 }
 
 /*
@@ -283,9 +278,5 @@ Future<Answer> _songDownload(Map params, List<Cookie> cookie) {
     "https://u.y.qq.com/cgi-bin/musicu.fcg",
     params: data,
     cookie: cookie,
-  ).then((value) {
-    print(value.data['req']["data"]['freeflowsip'][0] + value.data['queryvkey']['data']["midurlinfo"][0]['purl'] + '&fromtag=77');
-
-    return value;
-  });
+  );
 }

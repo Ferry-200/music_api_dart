@@ -218,7 +218,7 @@ Future<Answer> _lrc(Map params, List<Cookie> cookie) {
   var signature = _signatureParams(data);
 
   data["signature"] = signature;
-  print(signature);
+  // print(signature);
   return _get(
     "https://m3ws.kugou.com/api/v1/krc/get_lyrics",
     params: data,
@@ -248,8 +248,8 @@ Future<Answer> _krc(Map params, List<Cookie> cookie) {
     var id = (data["candidates"] as List<dynamic>).firstOrNull["id"];
     var accesskey = (data["candidates"] as List<dynamic>).firstOrNull["accesskey"];
 
-    print(id);
-    print(accesskey);
+    // print(id);
+    // print(accesskey);
     return _krcInfo({"id": id, "accesskey": accesskey}, cookie);
   });
 }

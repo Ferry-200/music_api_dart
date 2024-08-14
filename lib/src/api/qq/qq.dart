@@ -330,7 +330,7 @@ Future<Answer> _getImage(
         ans = ans.copy(cookie: cookies.map((str) => Cookie.fromSetCookieValue(str)).toList());
 
         var content = base64.encode(value?.data);
-        print("data:image/png;base64,$content");
+        // print("data:image/png;base64,$content");
 
         // print(cookies);
 
@@ -341,8 +341,8 @@ Future<Answer> _getImage(
       } else {
         return Future.error(const Answer(site: MusicSite.QQ, code: 500, msg: "服务异常"));
       }
-    } catch (e) {
-      print(e);
+    } catch (_) {
+      // print(e);
       return Future.error(const Answer(site: MusicSite.QQ, code: 500, msg: "QQ对象转换异常"));
     }
   });
@@ -383,8 +383,8 @@ Future<Answer> _getString(
       } else {
         return Future.error(const Answer(site: MusicSite.QQ, code: 500, msg: "服务异常"));
       }
-    } catch (e) {
-      print(e);
+    } catch (_) {
+      // print(e);
       return Future.error(const Answer(site: MusicSite.QQ, code: 500, msg: "QQ对象转换异常"));
     }
   });

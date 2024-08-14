@@ -65,8 +65,8 @@ Future<Answer> _rankSongAll(Map params, List<Cookie> cookie) {
       info["info"] = list;
 
       return value.copy(data: info);
-    } catch (e) {
-      print(e);
+    } catch (_) {
+      // print(e);
     }
 
     return value;

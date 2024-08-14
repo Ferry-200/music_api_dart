@@ -1,11 +1,11 @@
 part of '../qq.dart';
 
-void main() {
-  var ss = ptqrtokenStr("77c22c4269eebc7da0199094f4232ec63d7bdac7cb8bc84b6608f1fdaf7b5a1c0c522c8f31fe357690f945cb8dd3c0cf98bb7c27a4dbb0a63f43091dcfa2e83c");
+// void main() {
+//   var ss = ptqrtokenStr("77c22c4269eebc7da0199094f4232ec63d7bdac7cb8bc84b6608f1fdaf7b5a1c0c522c8f31fe357690f945cb8dd3c0cf98bb7c27a4dbb0a63f43091dcfa2e83c");
 
-  print(ss);
+//   print(ss);
 
-}
+// }
 ///qq网页登录界面
 ///https://ui.ptlogin2.qq.com/cgi-bin/login?pt_no_auth=1&pt_wxtest=1&pt_no_onekey=1&daid=384&style=9&hln_css=https://y.gtimg.cn/music/common/upload/t_cm3_photo_publish/1117688.png?max_age=2592000&appid=83886593&s_url=https://y.qq.com/m/login/redirect.html?login_type=1&surl=http://y.qq.com/portal/profile.html
 /*
@@ -36,14 +36,14 @@ Future<Answer> _loginQr(Map params, List<Cookie> cookie) {
 *
  */
 Future<Answer> _loginQrCheck(Map params, List<Cookie> cookie) {
-  print('请求的cookie');
-  print(cookie);
+  // print('请求的cookie');
+  // print(cookie);
 
-  var ss = ptqrtokenStr("77c22c4269eebc7da0199094f4232ec63d7bdac7cb8bc84b6608f1fdaf7b5a1c0c522c8f31fe357690f945cb8dd3c0cf98bb7c27a4dbb0a63f43091dcfa2e83c");
+  // var ss = ptqrtokenStr("77c22c4269eebc7da0199094f4232ec63d7bdac7cb8bc84b6608f1fdaf7b5a1c0c522c8f31fe357690f945cb8dd3c0cf98bb7c27a4dbb0a63f43091dcfa2e83c");
 
-  print(ss);
+  // print(ss);
 
-  print("结束");
+  // print("结束");
   final data = {
     "u1": Uri.encodeComponent("https://graph.qq.com/oauth2.0/login_jump"),
     "ptqrtoken": ptqrtokenStr(params["qrsig"]),

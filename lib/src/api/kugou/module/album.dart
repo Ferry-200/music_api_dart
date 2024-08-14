@@ -71,8 +71,8 @@ Future<Answer> _albumSong(Map params, List<Cookie> cookie) {
       data["data"]["info"] = datas;
 
       return value.copy(data: data);
-    } catch (e) {
-      print(e);
+    } catch (_) {
+      // print(e);
     }
     return value;
   });
