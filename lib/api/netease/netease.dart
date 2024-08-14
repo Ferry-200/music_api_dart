@@ -90,10 +90,7 @@ class Netease {
 
   ///歌词
   static Future<Answer> lyric({String? id}) {
-    return _lyric.call({"id": id}, []).then((value) {
-      var lrc = value.data["lrc"]["lyric"];
-      return value.copy(data: lrc);
-    });
+    return _lyric.call({"id": id}, []);
   }
 
   ///精品歌单
