@@ -11,6 +11,15 @@
 # (the recommended set includes the core lints).
 # The core lints are also what is used by pub.dev for scoring packages.
 
+analyzer:
+  errors:
+    constant_identifier_names: ignore
+    dangling_library_doc_comments: ignore
+    deprecated_member_use_from_same_package: ignore
+    non_constant_identifier_names: ignore
+    prefer_interpolation_to_compose_strings: ignore
+    slash_for_doc_comments: ignore
+    unused_element: ignore
 include: package:lints/recommended.yaml
 
 # Uncomment the following section to specify additional rules.

@@ -13,6 +13,7 @@ class AppException implements Exception {
     this.msg,
   ]);
 
+  @override
   String toString() {
     return "$code :$msg";
   }
@@ -76,10 +77,10 @@ class AppException implements Exception {
 
 /// 请求错误
 class BadRequestException extends AppException {
-  BadRequestException([int? code, String? message]) : super(code, message);
+  BadRequestException([super.code, super.message]);
 }
 
 /// 未认证异常
 class UnauthorisedException extends AppException {
-  UnauthorisedException([int? code, String? message]) : super(code, message);
+  UnauthorisedException([super.code, super.message]);
 }

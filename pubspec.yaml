@@ -24,6 +24,7 @@ dependencies:
   #互斥锁
   synchronized: ^3.1.0
   xml: ^6.5.0
+  pointycastle: ^3.9.1
 
 dev_dependencies:
   lints: ^3.0.0

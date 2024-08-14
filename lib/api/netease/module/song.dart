@@ -36,7 +36,7 @@ Future<Answer> _songUrl(Map params, List<Cookie> cookie) {
   cookie.add(Cookie('os', 'pc'));
 
   if (!cookie.any((cookie) => cookie.name == 'MUSIC_U')) {
-    String _createdSecretKey({int size = 16}) {
+    String createdSecretKey({int size = 16}) {
       StringBuffer buffer = StringBuffer();
       for (var i = 0; i < size; i++) {
         final position = Random().nextInt(_keys.length);
@@ -45,7 +45,7 @@ Future<Answer> _songUrl(Map params, List<Cookie> cookie) {
       return buffer.toString();
     }
 
-    cookie = List.from(cookie)..add(Cookie('_ntes_nuid', _createdSecretKey()));
+    cookie = List.from(cookie)..add(Cookie('_ntes_nuid', createdSecretKey()));
   }
 
   return _eApiRequest(
@@ -75,7 +75,6 @@ Future<Answer> _songPurchased(Map params, List<Cookie> cookie) {
 }
 
 //歌曲上传
-//TODO
 Future<Answer> _songUpload(Map params, List<Cookie> cookie) {
   return _request(
     'POST',

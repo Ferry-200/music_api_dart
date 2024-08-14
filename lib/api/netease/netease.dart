@@ -27,7 +27,7 @@ part 'module/cloud_match.dart';
 part 'module/comment.dart';
 part 'module/countries.dart';
 part 'module/daily_signin.dart';
-part 'module/digitalAlbum.dart';
+part 'module/digital_album.dart';
 part 'module/dj.dart';
 part 'module/event.dart';
 part 'module/fm.dart';
