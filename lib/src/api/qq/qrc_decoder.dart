@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:music_api/utils/utils.dart';
+import 'package:music_api/src/utils/utils.dart';
 import 'package:universal_io/io.dart';
 
 import 'qrc_decode_helper.dart';

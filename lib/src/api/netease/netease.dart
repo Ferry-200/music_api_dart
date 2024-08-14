@@ -4,12 +4,12 @@ import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
 import 'package:encrypt/encrypt.dart';
-import 'package:music_api/entity/music_entity.dart';
-import 'package:music_api/http/http_dio.dart';
-import 'package:music_api/utils/answer.dart';
-import 'package:music_api/utils/crypto.dart';
-import 'package:music_api/utils/types.dart';
-import 'package:music_api/utils/utils.dart';
+import 'package:music_api/src/entity/music_entity.dart';
+import 'package:music_api/src/http/http_dio.dart';
+import 'package:music_api/src/utils/answer.dart';
+import 'package:music_api/src/utils/crypto.dart';
+import 'package:music_api/src/utils/types.dart';
+import 'package:music_api/src/utils/utils.dart';
 import 'package:universal_io/io.dart';
 import 'dart:async';
 import 'dart:io';

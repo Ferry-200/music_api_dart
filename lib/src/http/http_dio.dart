@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:music_api/http/token_interceptor.dart';
+import 'package:music_api/src/http/token_interceptor.dart';
 
 import '../dio/dio.dart';
 import '../dio/io.dart';

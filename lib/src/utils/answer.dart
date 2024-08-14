@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:music_api/entity/music_entity.dart';
+import 'package:music_api/src/entity/music_entity.dart';
 import 'package:universal_io/io.dart';
 
 class Answer {
