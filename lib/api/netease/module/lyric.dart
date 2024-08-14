@@ -10,7 +10,7 @@ Future<Answer> _lyric(Map params, List<Cookie> cookie) {
     'kv': -1,
     'tv': -1,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/song/lyric',
     data,

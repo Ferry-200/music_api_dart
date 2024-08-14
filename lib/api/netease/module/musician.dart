@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 账号云豆数
 Future<Answer> _musicianCloudBean (Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/cloudbean/get',
     {},
@@ -16,7 +16,7 @@ Future<Answer> _musicianCloudBeanObtain (Map params, List<Cookie> cookie) {
     'userMissionId': params['id'],
     'period': params['period'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/nmusician/workbench/mission/reward/obtain/new',
     data,
@@ -26,7 +26,7 @@ Future<Answer> _musicianCloudBeanObtain (Map params, List<Cookie> cookie) {
 }
 // 音乐人数据概况
 Future<Answer> _musicianDataOverview (Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/creator/musician/statistic/data/overview/get',
     {},
@@ -40,7 +40,7 @@ Future<Answer> _musicianPlayTrend (Map params, List<Cookie> cookie) {
     'startTime': params['startTime'],
     'endTime': params['endTime'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/creator/musician/play/count/statistic/data/trend/get',
     data,
@@ -52,7 +52,7 @@ Future<Answer> _musicianPlayTrend (Map params, List<Cookie> cookie) {
 // 音乐人歌曲播放趋势
 Future<Answer> _musicianTask (Map params, List<Cookie> cookie) {
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/nmusician/workbench/mission/cycle/list',
     {},
@@ -62,7 +62,7 @@ Future<Answer> _musicianTask (Map params, List<Cookie> cookie) {
 }
 // 音乐人签到
 Future<Answer> _musicianSign (Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/creator/user/access',
     {},

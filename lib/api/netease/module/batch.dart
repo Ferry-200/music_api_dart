@@ -8,7 +8,7 @@ Future<Answer> _batch(Map params, List<Cookie> cookie) {
       data[key] = params[key];
     }
   });
-  return eApiRequest(
+  return _eApiRequest(
     url: 'http://music.163.com/eapi/batch',
     optionUrl: '/api/batch',
     data: data,

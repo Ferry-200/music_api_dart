@@ -10,7 +10,7 @@ Future<Answer> _registerCellphone(Map params, List<Cookie> cookie) {
     'nickname': params['nickname'],
     'countrycode': params['countrycode'] ?? '86'
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/register/cellphone',
     data,

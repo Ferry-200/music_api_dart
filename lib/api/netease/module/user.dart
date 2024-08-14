@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 账户
 Future<Answer> _userAccount(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/nuser/account/get',
     {},
@@ -17,7 +17,7 @@ Future<Answer> _userAudio(Map params, List<Cookie> cookie) {
     'userId': params['uid'],
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/get/byuser',
     data,
@@ -34,7 +34,7 @@ Future<Answer> _userBindingCellphone(Map params, List<Cookie> cookie) {
     'password': Encrypted(Uint8List.fromList(md5.convert(utf8.encode(params['password'])).bytes)).base16,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/user/bindingCellphone',
     data,
@@ -49,7 +49,7 @@ Future<Answer> _userBinding(Map params, List<Cookie> cookie) {
     'userId': params['uid'],
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v1/user/bindings/${params["uid"]}',
     data,
@@ -64,7 +64,7 @@ Future<Answer> _userCloudDel(Map params, List<Cookie> cookie) {
     'songIds': [params['id']],
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/cloud/del',
     data,
@@ -80,7 +80,7 @@ Future<Answer> _userCloudDetail(Map params, List<Cookie> cookie) {
     'songIds': id,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/cloud/get/byids',
     data,
@@ -96,7 +96,7 @@ Future<Answer> _userCloud(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v1/cloud/get',
     data,
@@ -106,7 +106,7 @@ Future<Answer> _userCloud(Map params, List<Cookie> cookie) {
 }
 // 用户详情
 Future<Answer> _userDetail(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     '`https://music.163.com/weapi/v1/user/detail/${params["uid"]}',
     {},
@@ -122,7 +122,7 @@ Future<Answer> _userDj(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/dj/program/${params["uid"]}',
     data,
@@ -136,7 +136,7 @@ Future<Answer> _userEvent(Map params, List<Cookie> cookie) {
   cookie.add(Cookie('os', 'ios'));
   cookie.add(Cookie('appver', '8.7.01'));
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/event/get/${params['uid']}',
     {'getcounts': true, 'limit': params['limit'] ?? 30, 'time': params['lasttime'] ?? -1, 'total': false},
@@ -149,7 +149,7 @@ Future<Answer> _userEvent(Map params, List<Cookie> cookie) {
 Future<Answer> _userFollow(Map params, List<Cookie> cookie) {
   cookie.add(Cookie('os', 'pc'));
   params['t'] = (params['t'] == 1 ? 'follow' : 'delfollow');
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/user/${params['t']}/${params['id']}',
     {},
@@ -160,7 +160,7 @@ Future<Answer> _userFollow(Map params, List<Cookie> cookie) {
 
 // 关注TA的人(粉丝)
 Future<Answer> _userFolloweds(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/eapi/user/getfolloweds/${params["uid"]}',
     {
@@ -177,7 +177,7 @@ Future<Answer> _userFolloweds(Map params, List<Cookie> cookie) {
 
 // TA关注的人(关注)
 Future<Answer> _userFollows(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/user/getfollows/${params["uid"]}',
     {'limit': params['limit'] ?? 30, 'offset': params['offset'] ?? 0, 'order': true},
@@ -188,7 +188,7 @@ Future<Answer> _userFollows(Map params, List<Cookie> cookie) {
 
 // 类别热门电台
 Future<Answer> _userLevel(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/user/level',
     {},
@@ -199,7 +199,7 @@ Future<Answer> _userLevel(Map params, List<Cookie> cookie) {
 
 // 用户歌单
 Future<Answer> _userPlaylist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/user/playlist',
     {
@@ -215,7 +215,7 @@ Future<Answer> _userPlaylist(Map params, List<Cookie> cookie) {
 
 // 听歌排行
 Future<Answer> _userRecord(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/play/record',
     {
@@ -236,7 +236,7 @@ Future<Answer> _userReplaceCellphone(Map params, List<Cookie> cookie) {
     'ctcode': params['ctcode'] ?? '86',
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/user/replaceCellphone',
     data,
@@ -247,7 +247,7 @@ Future<Answer> _userReplaceCellphone(Map params, List<Cookie> cookie) {
 
 // 收藏计数
 Future<Answer> _userSubcount(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/subcount',
     {},
@@ -258,7 +258,7 @@ Future<Answer> _userSubcount(Map params, List<Cookie> cookie) {
 
 // 编辑用户信息
 Future<Answer> _userUpdate(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/user/profile/update',
     {
@@ -279,7 +279,7 @@ Future<Answer> _userUpdate(Map params, List<Cookie> cookie) {
 Future<Answer> _userCommentHistory(Map params, List<Cookie> cookie) {
   cookie.add(Cookie("os", "ios"));
   cookie.add(Cookie("appver", "8.7.01"));
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/comment/user/comment/history',
     {

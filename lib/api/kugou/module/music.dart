@@ -77,7 +77,7 @@ Future<Answer> _musicInfo(Map params, List<Cookie> cookie) {
     "dfid": "1JdAUM1MExVq2HbWdD1cveSL",
   };
 
-  var signature = signatureParams(data);
+  var signature = _signatureParams(data);
 
   data["signature"] = signature;
   // print(signature);
@@ -215,7 +215,7 @@ Future<Answer> _lrc(Map params, List<Cookie> cookie) {
     "dfid": "-",
   };
 
-  var signature = signatureParams(data);
+  var signature = _signatureParams(data);
 
   data["signature"] = signature;
   print(signature);
@@ -272,7 +272,7 @@ Future<Answer> _krcInfo(Map params, List<Cookie> cookie) {
     cookie: cookie,
   ).then((value) {
     var content = value.data["content"];
-    String result = decodeKrc(content);
+    String result = _decodeKrc(content);
 
     var krc = {"lyric": result};
 

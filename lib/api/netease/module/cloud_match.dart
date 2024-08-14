@@ -10,7 +10,7 @@ Future<Answer> _cloudMatch (Map params, List<Cookie> cookie) {
     'songId': params['sid'],
     'adjustSongId': params['asid'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/cloud/user/song/match',
     data,

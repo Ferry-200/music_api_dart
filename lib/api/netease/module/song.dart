@@ -5,7 +5,7 @@ const _keys = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 // 歌曲详情
 Future<Answer> _songDetail(Map params, List<Cookie> cookie) {
   params['ids'] = params['ids'].toString().split(RegExp(r'\s*,\s*'));
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v3/song/detail',
     {
@@ -18,7 +18,7 @@ Future<Answer> _songDetail(Map params, List<Cookie> cookie) {
 
 // 更新歌曲顺序
 Future<Answer> _songOrderUpdate(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'http://interface.music.163.com/api/playlist/manipulate/tracks',
     {
@@ -39,7 +39,7 @@ Future<Answer> _songUrl(Map params, List<Cookie> cookie) {
     String _createdSecretKey({int size = 16}) {
       StringBuffer buffer = StringBuffer();
       for (var i = 0; i < size; i++) {
-        final position = math.Random().nextInt(_keys.length);
+        final position = Random().nextInt(_keys.length);
         buffer.write(_keys[position]);
       }
       return buffer.toString();
@@ -48,7 +48,7 @@ Future<Answer> _songUrl(Map params, List<Cookie> cookie) {
     cookie = List.from(cookie)..add(Cookie('_ntes_nuid', _createdSecretKey()));
   }
 
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://interface3.music.163.com/eapi/song/enhance/player/url',
     optionUrl: '/api/song/enhance/player/url',
     data: {
@@ -65,7 +65,7 @@ Future<Answer> _songPurchased(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 20,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/single/mybought/song/list',
     data,
@@ -77,7 +77,7 @@ Future<Answer> _songPurchased(Map params, List<Cookie> cookie) {
 //歌曲上传
 //TODO
 Future<Answer> _songUpload(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'http://interface.music.163.com/',
     {
@@ -96,7 +96,7 @@ Future<Answer> _songDownloadUrl(Map params, List<Cookie> cookie) {
     'id': params['id'],
     'br': params['br'] ?? "999000",
   };
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://interface.music.163.com/eapi/song/enhance/download/url',
     optionUrl: '/api/song/enhance/download/url',
     data: data,

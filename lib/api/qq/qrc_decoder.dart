@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:music_api/utils/utils.dart';
 import 'package:universal_io/io.dart';
 
-import 'QrcDecodeHelper.dart';
+import 'qrc_decode_helper.dart';
 
 class QrcDecoder {
   static final List<int> KEY1 = "!@#)(NHLiuy*\$%^&".codeUnits;

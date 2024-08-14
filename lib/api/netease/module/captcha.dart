@@ -6,7 +6,7 @@ Future<Answer> _captchaSend(Map params, List<Cookie> cookie) {
     'ctcode': params['ctcode'] ?? '86',
     'cellphone': params['phone'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/sms/captcha/sent',
     data,
@@ -22,7 +22,7 @@ Future<Answer> _captchaVerify(Map params, List<Cookie> cookie) {
     'cellphone': params['phone'],
     'captcha': params['captcha']
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/sms/captcha/verify',
     data,

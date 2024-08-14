@@ -10,7 +10,7 @@ Future<Answer> _commentAlbum(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/resource/comments/R_AL_3_${params["id"]}',
     data,
@@ -28,7 +28,7 @@ Future<Answer> _commentDj(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/resource/comments/A_DJ_1_${params["id"]}',
     data,
@@ -43,7 +43,7 @@ Future<Answer> _commentEvents(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 20,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/resource/comments/${params["threadId"]}',
     data,
@@ -60,7 +60,7 @@ Future<Answer> _commentFloor(Map params, List<Cookie> cookie) {
     'time': params['time'] ?? -1,
     'limit': params['limit'] ?? 20,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/resource/comment/floor/get',
     data,
@@ -89,7 +89,7 @@ Future<Answer> _commentHot(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/resource/hotcomments/${params["type"]}${params["id"]}',
     data,
@@ -123,7 +123,7 @@ Future<Answer> _commentHugList(Map params, List<Cookie> cookie) {
     'pageSize': params['pageSize'] ?? 100,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v2/resource/comments/hug/list',
     data,
@@ -152,7 +152,7 @@ Future<Answer> _commentHugListener(Map params, List<Cookie> cookie) {
     'threadId': params['type'] + params['id'],
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v2/resource/comments/hug/listener',
     data,
@@ -181,7 +181,7 @@ Future<Answer> _commentLike(Map params, List<Cookie> cookie) {
   if (params['type'] == 'A_EV_2_') {
     data['threadId'] = params['threadId'];
   }
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/comment/$t',
     data,
@@ -200,7 +200,7 @@ Future<Answer> _commentMusic(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/resource/comments/R_SO_4_${params["id"]}',
     data,
@@ -219,7 +219,7 @@ Future<Answer> _commentMv(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request('POST', 'https://music.163.com/weapi/v1/resource/comments/R_MV_5_${params["id"]}', data, crypto: Crypto.weApi, cookies: cookie);
+  return _request('POST', 'https://music.163.com/weapi/v1/resource/comments/R_MV_5_${params["id"]}', data, crypto: Crypto.weApi, cookies: cookie);
 }
 
 //歌单评论
@@ -231,7 +231,7 @@ Future<Answer> _commentPlaylist(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request('POST', 'https://music.163.com/weapi/v1/resource/comments/A_PL_0_${params["id"]}', data, crypto: Crypto.weApi, cookies: cookie);
+  return _request('POST', 'https://music.163.com/weapi/v1/resource/comments/A_PL_0_${params["id"]}', data, crypto: Crypto.weApi, cookies: cookie);
 }
 
 //视频评论
@@ -243,7 +243,7 @@ Future<Answer> _commentVideo(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'beforeTime': params['before'] ?? 0,
   };
-  return request('POST', 'https://music.163.com/weapi/v1/resource/comments/R_VI_62_${params["id"]}', data, crypto: Crypto.weApi, cookies: cookie);
+  return _request('POST', 'https://music.163.com/weapi/v1/resource/comments/R_VI_62_${params["id"]}', data, crypto: Crypto.weApi, cookies: cookie);
 }
 
 //评论
@@ -289,7 +289,7 @@ Future<Answer> _commentNew(Map params, List<Cookie> cookie) {
     'sortType': params['sortType'] ?? 1 //99:按推荐排序,2:按热度排序,3:按时间排序
   };
 
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://music.163.com/api/v2/resource/comments',
     optionUrl: '/api/v2/resource/comments',
     data: data,
@@ -330,7 +330,7 @@ Future<Answer> _comment(Map params, List<Cookie> cookie) {
     data['commentId'] = params['commentId'];
     data['content'] = params['content'];
   }
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/resource/comments/${params["t"]}',
     data,

@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 新碟上架
 Future<Answer> _topAlbum(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/discovery/new/albums/area',
     {
@@ -22,7 +22,7 @@ Future<Answer> _topAlbum(Map params, List<Cookie> cookie) {
 
 // 热门歌手
 Future<Answer> _topArtists(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/artist/top',
     {'limit': params['limit'] ?? 50, 'offset': params['offset'] ?? 0, 'total': true},
@@ -46,7 +46,7 @@ Future<Answer> _topList(Map params, List<Cookie> cookie) {
     );
   }
 
-  return request(
+  return _request(
     'POST',
     'https://interface3.music.163.com/api/playlist/v4/detail',
     {
@@ -61,7 +61,7 @@ Future<Answer> _topList(Map params, List<Cookie> cookie) {
 
 // MV排行榜
 Future<Answer> _topMv(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mv/toplist',
     {'area': params['area'] ?? '', 'limit': params['limit'] ?? 30, 'offset': params['offset'] ?? 0, 'total': true},
@@ -72,7 +72,7 @@ Future<Answer> _topMv(Map params, List<Cookie> cookie) {
 
 // 精品歌单
 Future<Answer> _topPlaylistHighquality(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/highquality/list',
     {
@@ -93,7 +93,7 @@ Future<Answer> _topPlaylist(Map params, List<Cookie> cookie) {
   var page = params["page"] ?? 1;
   var offset = (page - 1) * size;
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/playlist/list',
     {
@@ -112,7 +112,7 @@ Future<Answer> _topPlaylist(Map params, List<Cookie> cookie) {
 
 // 新歌速递
 Future<Answer> _topSong(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/discovery/new/songs',
     {
@@ -126,7 +126,7 @@ Future<Answer> _topSong(Map params, List<Cookie> cookie) {
 
 // 热门话题/专栏
 Future<Answer> _topicDetailEventHot(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/act/event/hot',
     {
@@ -139,7 +139,7 @@ Future<Answer> _topicDetailEventHot(Map params, List<Cookie> cookie) {
 
 // 话题/专栏详情
 Future<Answer> _topicDetail(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/act/detail',
     {
@@ -152,7 +152,7 @@ Future<Answer> _topicDetail(Map params, List<Cookie> cookie) {
 
 // 收藏的专栏
 Future<Answer> _topicSubList(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/topic/sublist',
     {'limit': params['limit'] ?? 50, 'offset': params['offset'] ?? 0, 'total': true},
@@ -163,7 +163,7 @@ Future<Answer> _topicSubList(Map params, List<Cookie> cookie) {
 
 // 歌手榜
 Future<Answer> _toplistArtist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/toplist/artist',
     {
@@ -179,7 +179,7 @@ Future<Answer> _toplistArtist(Map params, List<Cookie> cookie) {
 
 // 所有榜单内容摘要
 Future<Answer> _toplistDetail(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/toplist/detail',
     {},
@@ -190,7 +190,7 @@ Future<Answer> _toplistDetail(Map params, List<Cookie> cookie) {
 
 // 所有榜单介绍
 Future<Answer> _toplist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/toplist',
     {},

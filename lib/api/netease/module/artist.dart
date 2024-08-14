@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 歌手专辑列表
 Future<Answer> _artistAlbum(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     "https://music.163.com/weapi/artist/albums/${params['id']}",
     {'limit': params['limit'] ?? 30, 'offset': params['offset'] ?? 0, 'total': true},
@@ -12,7 +12,7 @@ Future<Answer> _artistAlbum(Map params, List<Cookie> cookie) {
 }
 
 //歌手介绍
-Future<Answer> _artistDesc(Map params, List<Cookie> cookie) => request(
+Future<Answer> _artistDesc(Map params, List<Cookie> cookie) => _request(
       'POST',
       'https://music.163.com/weapi/artist/introduction',
       {'id': params['id']},
@@ -21,7 +21,7 @@ Future<Answer> _artistDesc(Map params, List<Cookie> cookie) => request(
     );
 
 //歌手介详情
-Future<Answer> _artistDetail(Map params, List<Cookie> cookie) => request(
+Future<Answer> _artistDetail(Map params, List<Cookie> cookie) => _request(
       'POST',
       'https://music.163.com/api/artist/head/info/get',
       {'id': params['id']},
@@ -50,7 +50,7 @@ Future<Answer> _artistList(Map params, List<Cookie> cookie) {
   final size = params['size'] ?? 30;
   final page = params['page'] ?? 1;
   final offset = (page - 1) * size;
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/api/v1/artist/list',
       {
@@ -67,7 +67,7 @@ Future<Answer> _artistList(Map params, List<Cookie> cookie) {
 
 // 歌手相关MV
 Future<Answer> _artistMv(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/artist/mvs',
       {
@@ -82,7 +82,7 @@ Future<Answer> _artistMv(Map params, List<Cookie> cookie) {
 
 // 歌手相关视频
 Future<Answer> _artistVideo(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/mlog/artist/video',
       {
@@ -103,7 +103,7 @@ Future<Answer> _artistNewMv(Map params, List<Cookie> cookie) {
   cookie.add(Cookie("os", 'ios'));
   cookie.add(Cookie("appver", '8.7.01'));
 
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/api/sub/artist/new/works/mv/list',
       {
@@ -119,7 +119,7 @@ Future<Answer> _artistNewSong(Map params, List<Cookie> cookie) {
   cookie.add(Cookie("os", 'ios'));
   cookie.add(Cookie("appver", '8.7.01'));
 
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/api/sub/artist/new/works/song/list',
       {
@@ -136,7 +136,7 @@ Future<Answer> _artistSongs(Map params, List<Cookie> cookie) {
   final size = params['size'] ?? 100;
   final page = params['page'] ?? 1;
   final offset = (page - 1) * size;
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/api/v1/artist/songs',
       {
@@ -155,7 +155,7 @@ Future<Answer> _artistSongs(Map params, List<Cookie> cookie) {
 Future<Answer> _artistSub(Map params, List<Cookie> cookie) {
   final type = params['t'] == 1 ? 'sub' : 'unsub';
 
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/artist/$type',
       {
@@ -168,7 +168,7 @@ Future<Answer> _artistSub(Map params, List<Cookie> cookie) {
 
 // 关注歌手列表
 Future<Answer> _artistSubList(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/artist/sublist',
       {
@@ -182,7 +182,7 @@ Future<Answer> _artistSubList(Map params, List<Cookie> cookie) {
 
 // 歌手热门 50 首歌曲
 Future<Answer> _artistTopSong(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/api/artist/top/song',
       {
@@ -194,7 +194,7 @@ Future<Answer> _artistTopSong(Map params, List<Cookie> cookie) {
 
 // 歌手单曲
 Future<Answer> _artists(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/artist/${params["id"]}',
     {},
@@ -210,7 +210,7 @@ Future<Answer> _artistFans(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 20,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/artist/${params["id"]}',
     data,

@@ -7,7 +7,7 @@ Future<Answer> _shareResource(Map params, List<Cookie> cookie) {
     'msg': params['msg'] ?? '',
     'id': params['id'] ?? '',
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/share/friends/resource',
     data,

@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 全部歌单分类
 Future<Answer> _playlistCatlist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/playlist/catalogue',
     {},
@@ -15,7 +15,7 @@ Future<Answer> _playlistCatlist(Map params, List<Cookie> cookie) {
 Future<Answer> _playlistCreate(Map params, List<Cookie> cookie) {
   cookie.add(Cookie('os', 'pc'));
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/create',
     {
@@ -30,7 +30,7 @@ Future<Answer> _playlistCreate(Map params, List<Cookie> cookie) {
 
 // 删除歌单
 Future<Answer> _playlistDelete(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/playlist/remove',
       {
@@ -42,7 +42,7 @@ Future<Answer> _playlistDelete(Map params, List<Cookie> cookie) {
 
 // 更新歌单描述
 Future<Answer> _playlistDescUpdate(Map params, List<Cookie> cookie) {
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://interface3.music.163.com/eapi/playlist/desc/update',
     optionUrl: '/api/playlist/desc/update',
     data: {
@@ -55,7 +55,7 @@ Future<Answer> _playlistDescUpdate(Map params, List<Cookie> cookie) {
 
 // 初始化名字
 Future<Answer> _playlistDetailDynamic(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/detail/dynamic',
     {
@@ -71,7 +71,7 @@ Future<Answer> _playlistDetailDynamic(Map params, List<Cookie> cookie) {
 // 歌单详情
 //说明 : 由于网易云接口限制，歌单详情只会提供10首歌，通过调用_playlistTrackAll接口，传入对应的歌单`id`，即可获得对应的所有歌曲，
 Future<Answer> _playlistDetail(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v3/playlist/detail',
     {
@@ -93,7 +93,7 @@ Future<Answer> _playlistTrackAll(Map params, List<Cookie> cookie) {
   var size = params["size"] ?? 100000;
   var offset = page * size;
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v6/playlist/detail',
     {
@@ -117,7 +117,7 @@ Future<Answer> _playlistTrackAll(Map params, List<Cookie> cookie) {
       }
     });
 
-    var songs = await request(
+    var songs = await _request(
       'POST',
       'https://music.163.com/api/v3/song/detail',
       {
@@ -139,7 +139,7 @@ Future<Answer> _playlistTrackAll(Map params, List<Cookie> cookie) {
 
 // 精品歌单 tags
 Future<Answer> _playlistHighqualityTags(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/highquality/tags',
     {},
@@ -150,7 +150,7 @@ Future<Answer> _playlistHighqualityTags(Map params, List<Cookie> cookie) {
 
 // 热门歌单分类
 Future<Answer> _playlistHot(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/playlist/hottags',
     {},
@@ -161,7 +161,7 @@ Future<Answer> _playlistHot(Map params, List<Cookie> cookie) {
 
 // 我喜欢的歌单
 Future<Answer> _playlistMyLike(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/mlog/playlist/mylike/bytime/get',
     {
@@ -180,7 +180,7 @@ Future<Answer> _playlistNameUpdate(Map params, List<Cookie> cookie) {
     'name': params['name'],
   };
 
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://interface3.music.163.com/eapi/playlist/update/name',
     optionUrl: '/api/playlist/update/name',
     data: data,
@@ -195,7 +195,7 @@ Future<Answer> _playlistOrderUpdate(Map params, List<Cookie> cookie) {
     'ids': params['ids'],
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/order/update',
     data,
@@ -207,7 +207,7 @@ Future<Answer> _playlistOrderUpdate(Map params, List<Cookie> cookie) {
 // 收藏与取消收藏歌单
 Future<Answer> _playlistSubscribe(Map params, List<Cookie> cookie) {
   params['t'] = (params['t'] == 1 ? 'subscribe' : 'unsubscribe');
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/playlist/${params['t']}',
       {
@@ -219,7 +219,7 @@ Future<Answer> _playlistSubscribe(Map params, List<Cookie> cookie) {
 
 // 歌单收藏者
 Future<Answer> _playlistSubscribers(Map params, List<Cookie> cookie) {
-  return request('POST', 'https://music.163.com/weapi/playlist/subscribers', {'id': params['id'], 'limit': params['limit'] ?? 20, 'offset': params['offset'] ?? 0},
+  return _request('POST', 'https://music.163.com/weapi/playlist/subscribers', {'id': params['id'], 'limit': params['limit'] ?? 20, 'offset': params['offset'] ?? 0},
       crypto: Crypto.weApi, cookies: cookie);
 }
 
@@ -230,7 +230,7 @@ Future<Answer> _playlistTagsUpdate(Map params, List<Cookie> cookie) {
     'tags': params['tags'],
   };
 
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://interface3.music.163.com/eapi/playlist/tags/update',
     optionUrl: '/api/playlist/tags/update',
     data: data,
@@ -248,7 +248,7 @@ Future<Answer> _playlistTrackAdd(Map params, List<Cookie> cookie) {
       params['ids'].toString().split(',').map((e) => {'type': 3, 'id': e}).toList(),
     ),
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/track/add',
     data,
@@ -267,7 +267,7 @@ Future<Answer> _playlistTrackDelete(Map params, List<Cookie> cookie) {
       params['ids'].toString().split(',').map((e) => {'type': 3, 'id': e}).toList(),
     ),
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/track/delete',
     data,
@@ -288,7 +288,7 @@ Future<Answer> _playlistTracks(Map params, List<Cookie> cookie) {
     'imme': 'true'
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/manipulate/tracks',
     data,
@@ -308,7 +308,7 @@ Future<Answer> _playlistUpdate(Map params, List<Cookie> cookie) {
     '/api/playlist/update/name': '`{"id":${params['id']},"name":"${params['name']}"}',
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/batch',
     data,
@@ -318,7 +318,7 @@ Future<Answer> _playlistUpdate(Map params, List<Cookie> cookie) {
 }
 
 Future<Answer> _playlisVideoRecent(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/playlist/video/recent',
     {},
@@ -334,7 +334,7 @@ Future<Answer> _playlisPrivacy(Map params, List<Cookie> cookie) {
     'privacy': 0,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://interface.music.163.com/eapi/playlist/update/privacy',
     data,

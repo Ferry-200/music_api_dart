@@ -10,7 +10,7 @@ Future<Answer> _vipTimemachine(Map params, List<Cookie> cookie) {
     data["limit"] =params["limit"]??60;
   }
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/vipmusic/newrecord/weekflow',
     {"id": params["id"]},

@@ -28,7 +28,7 @@ Future<Answer> _albumInfo(Map params, List<Cookie> cookie) {
     "dfid": "-",
   };
 
-  var signature = signatureParams(data);
+  var signature = _signatureParams(data);
 
   data["signature"] = signature;
   // print(signature);

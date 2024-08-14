@@ -8,7 +8,7 @@ Future<Answer> _msgComment(Map params, List<Cookie> cookie) {
     'total': "true",
     'uid': params['uid']
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v1/user/comments/${params["uid"]}',
     data,
@@ -24,7 +24,7 @@ Future<Answer> _msgForwards(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': "true"
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/forwards/get',
     data,
@@ -40,7 +40,7 @@ Future<Answer> _msgNotice(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': "true"
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/msg/notices',
     data,
@@ -57,7 +57,7 @@ Future<Answer> _msgPrivateHistory(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': "true"
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/msg/private/history',
     data,
@@ -73,7 +73,7 @@ Future<Answer> _msgPrivate(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': "true"
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/msg/private/users',
     data,
@@ -83,7 +83,7 @@ Future<Answer> _msgPrivate(Map params, List<Cookie> cookie) {
 }
 // 最近联系
 Future<Answer> _msgRecentcontact(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/msg/recentcontact/get',
     {},

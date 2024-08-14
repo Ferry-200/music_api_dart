@@ -10,7 +10,7 @@ Future<Answer> _sendPlaylist(Map params, List<Cookie> cookie) {
     'msg': params['msg'],
     'userIds': '[${params['user_ids']}]'
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/msg/private/send',
     data,
@@ -30,7 +30,7 @@ Future<Answer> _sendSong(Map params, List<Cookie> cookie) {
     'msg': params['msg'],
     'userIds': '[${params['user_ids']}]'
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/msg/private/send',
     data,
@@ -48,7 +48,7 @@ Future<Answer> _sendText(Map params, List<Cookie> cookie) {
     'msg': params['msg'],
     'userIds': '[${params['user_ids']}]'
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/msg/private/send',
     data,

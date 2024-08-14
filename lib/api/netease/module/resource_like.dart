@@ -16,7 +16,7 @@ Future<Answer> _resourceLike(Map params, List<Cookie> cookie) {
     data['threadId'] = params['threadId'];
   }
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/resource/${params["t"]}',
     data,

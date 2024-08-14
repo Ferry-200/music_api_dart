@@ -6,7 +6,7 @@ Future<Answer> _fmTrash (Map params, List<Cookie> cookie) {
   final data = {
     'songId': params['id'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/radio/trash/add?alg=RT&songId=${params['id']}&time=${params['time'] ?? 25}',
     data,

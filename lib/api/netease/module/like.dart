@@ -11,7 +11,7 @@ Future<Answer> _like(Map params, List<Cookie> cookie) {
     'like': params['like'] == 'false' ? false : true,
     "time":3,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/radio/like',
     data,
@@ -22,7 +22,7 @@ Future<Answer> _like(Map params, List<Cookie> cookie) {
 
 // 喜欢的歌曲(无序)
 Future<Answer> _likelist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/song/like/get',
     {"uid": params['uid']},

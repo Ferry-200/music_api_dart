@@ -12,7 +12,7 @@ Future<Answer> _mvAll(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': 'true',
   };
-  return request(
+  return _request(
     'POST',
     'https://interface.music.163.com/api/mv/all',
     data,
@@ -27,7 +27,7 @@ Future<Answer> _mvDetailInfo(Map params, List<Cookie> cookie) {
     'threadid': 'R_MV_5_${params['mvid']}',
     'composeliked': true,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/comment/commentthread/info',
     data,
@@ -39,7 +39,7 @@ Future<Answer> _mvDetailInfo(Map params, List<Cookie> cookie) {
 // MV详情
 Future<Answer> _mvDetail(Map params, List<Cookie> cookie) {
   final data = {'id': params['mvid']};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mv/detail',
     data,
@@ -54,7 +54,7 @@ Future<Answer> _mvExclusiveRcmd(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'limit': params['limit'] ?? 30,
   };
-  return request(
+  return _request(
     'POST',
     'https://interface.music.163.com/api/mv/exclusive/rcmd',
     data,
@@ -70,7 +70,7 @@ Future<Answer> _mvFirst(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': true,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mv/first',
     data,
@@ -86,7 +86,7 @@ Future<Answer> _mvSub(Map params, List<Cookie> cookie) {
     'mvId': params['mvid'],
     'mvIds': '["' + params['mvid'] + '"]',
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mv/${params['t']}',
     data,
@@ -101,7 +101,7 @@ Future<Answer> _mvSublist(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'total': true,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mv/first',
     data,
@@ -116,7 +116,7 @@ Future<Answer> _mvUrl(Map params, List<Cookie> cookie) {
     'id': params['id'],
     'r': params['r'] ?? 1080,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/song/enhance/play/mv/url',
     data,

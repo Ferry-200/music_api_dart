@@ -5,7 +5,7 @@ Future<Answer> _eventDel(Map params, List<Cookie> cookie) {
   final data = {
     'id': params['evId'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/eapi/event/delete',
     data,
@@ -22,7 +22,7 @@ Future<Answer> _eventForward(Map params, List<Cookie> cookie) {
     'id': params['evId'],
     'eventUserId': params['uid']
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/event/forward',
     data,
@@ -38,7 +38,7 @@ Future<Answer> _event(Map params, List<Cookie> cookie) {
     "pagesize": params['pagesize'] ?? 20,
     "lasttime": params['lasttime'] ?? -1
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/event/get',
     data,

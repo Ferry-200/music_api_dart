@@ -256,14 +256,14 @@ Future<Answer> _get(String path, {Map<String, dynamic>? params, List<Cookie> coo
   });
 }
 
-String signatureParams(Map<String, dynamic> params) {
+String _signatureParams(Map<String, dynamic> params) {
   var data = params.entries.sortedBy((element) => element.key).map((e) => "${e.key}=${e.value}").join();
 
   const secret = "NVPh5oo715z5DIWAeQlhMDsWXXQV4hwt";
   return md5.convert(utf8.encode("$secret$data$secret")).toString().toUpperCase();
 }
 
-String decodeKrc(String krc) {
+String _decodeKrc(String krc) {
   List<int> encKey = [0x40, 0x47, 0x61, 0x77, 0x5e, 0x32, 0x74, 0x47, 0x51, 0x36, 0x31, 0x2d, 0xce, 0xd2, 0x6e, 0x69];
 
   List<int> contentBytes = base64Decode(krc).sublist(4);

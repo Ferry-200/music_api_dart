@@ -15,7 +15,7 @@ Future<Answer> _qrcode(Map params, List<Cookie> cookie) {
     "srcappid": 2919,
   };
 
-  var signature = signatureParams(data);
+  var signature = _signatureParams(data);
 
   data["signature"] = signature;
   // print(signature);
@@ -39,7 +39,7 @@ Future<Answer> _getUserinfoQrcode(Map params, List<Cookie> cookie) {
     "srcappid": 2919,
   };
 
-  var signature = signatureParams(data);
+  var signature = _signatureParams(data);
 
   data["signature"] = signature;
   // print(signature);

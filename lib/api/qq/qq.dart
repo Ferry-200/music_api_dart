@@ -10,7 +10,7 @@ import 'package:universal_io/io.dart';
 import 'package:xml/xml.dart';
 
 import '../../utils/utils.dart';
-import 'QrcDecoder.dart';
+import 'qrc_decoder.dart';
 
 part 'module/album.dart';
 part 'module/home.dart';

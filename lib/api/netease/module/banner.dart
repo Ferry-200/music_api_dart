@@ -8,7 +8,7 @@ Future<Answer> _banner(Map params, List<Cookie> cookie) {
         3: 'ipad'
       }[params['type'] ?? 0] ??
       'pc';
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v2/banner/get',
     {'clientType': type},

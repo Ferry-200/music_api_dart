@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 //云贝支出
 Future<Answer> _yunbeiExpense(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/store/api/point/expense',
     {
@@ -15,7 +15,7 @@ Future<Answer> _yunbeiExpense(Map params, List<Cookie> cookie) {
 }
 //云贝账户信息
 Future<Answer> _yunbeiInfo(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v1/user/info',
     {},
@@ -25,7 +25,7 @@ Future<Answer> _yunbeiInfo(Map params, List<Cookie> cookie) {
 }
 //云贝收入
 Future<Answer> _yunbeiReceipt(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/store/api/point/receipt',
     {
@@ -38,7 +38,7 @@ Future<Answer> _yunbeiReceipt(Map params, List<Cookie> cookie) {
 }
 //云贝签到
 Future<Answer> _yunbeiSign(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/point/dailyTask',
     {
@@ -50,7 +50,7 @@ Future<Answer> _yunbeiSign(Map params, List<Cookie> cookie) {
 }
 //云贝完成任务
 Future<Answer> _yunbeiTaskFinish(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/usertool/task/point/receive',
     {
@@ -64,7 +64,7 @@ Future<Answer> _yunbeiTaskFinish(Map params, List<Cookie> cookie) {
 
 //云贝todo任务
 Future<Answer> _yunbeiTaskTodo(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/usertool/task/todo/query',
     {},
@@ -74,7 +74,7 @@ Future<Answer> _yunbeiTaskTodo(Map params, List<Cookie> cookie) {
 }
 //云贝所有任务
 Future<Answer> _yunbeiTask(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/usertool/task/list/all',
     {},
@@ -84,7 +84,7 @@ Future<Answer> _yunbeiTask(Map params, List<Cookie> cookie) {
 }
 //云贝今日签到信息
 Future<Answer> _yunbeiToday(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/point/today/get',
     {},
@@ -94,7 +94,7 @@ Future<Answer> _yunbeiToday(Map params, List<Cookie> cookie) {
 }
 //云贝
 Future<Answer> _yunbei(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/point/signed/get',
     {},
@@ -112,7 +112,7 @@ Future<Answer> _yunbeiRcmdSong(Map params, List<Cookie> cookie) {
     'fromUserId': -1,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/yunbei/rcmd/song/submit',
     data,
@@ -130,7 +130,7 @@ Future<Answer> _yunbeiRcmdSongHistory(Map params, List<Cookie> cookie) {
     })
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/yunbei/rcmd/song/history/list',
     data,

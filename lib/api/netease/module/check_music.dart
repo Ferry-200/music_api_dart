@@ -6,7 +6,7 @@ Future<Answer> _checkMusic(Map params, List<Cookie> cookie) {
     'ids': '[${params['id']}]',
     'br': int.parse(params['br'] ?? 999000),
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/song/enhance/player/url',
     data,

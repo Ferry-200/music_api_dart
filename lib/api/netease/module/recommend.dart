@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 推荐节目
 Future<Answer> _programRecommend(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/program/recommend/v1',
     {
@@ -17,7 +17,7 @@ Future<Answer> _programRecommend(Map params, List<Cookie> cookie) {
 
 // 每日推荐歌单
 Future<Answer> _recommendResource(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/discovery/recommend/resource',
     {},
@@ -29,7 +29,7 @@ Future<Answer> _recommendResource(Map params, List<Cookie> cookie) {
 // 每日推荐歌曲
 Future<Answer> _recommendSongs(Map params, List<Cookie> cookie) {
   cookie.add(Cookie('os', 'ios'));
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v3/discovery/recommend/songs',
     {},

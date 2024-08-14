@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 私人FM
 Future<Answer> _personalFm(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/v1/radio/get',
     {},
@@ -13,7 +13,7 @@ Future<Answer> _personalFm(Map params, List<Cookie> cookie) {
 
 // 推荐电台
 Future<Answer> _personalizedDjprogram(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/personalized/djprogram',
     {},
@@ -24,7 +24,7 @@ Future<Answer> _personalizedDjprogram(Map params, List<Cookie> cookie) {
 
 // 推荐电台
 Future<Answer> _personalizedMv(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/personalized/mv',
     {},
@@ -41,7 +41,7 @@ Future<Answer> _personalizedNewsong(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 10,
     'areaId': params['areaId'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/personalized/newsong',
     data,
@@ -57,7 +57,7 @@ Future<Answer> _personalizedPrivatecontentList(Map params, List<Cookie> cookie) 
     'limit': params['limit'] ?? 60,
     'total': 'true',
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/v2/privatecontent/list',
     data,
@@ -68,7 +68,7 @@ Future<Answer> _personalizedPrivatecontentList(Map params, List<Cookie> cookie) 
 
 // 独家放送
 Future<Answer> _personalizedPrivatecontent(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/personalized/privatecontent',
     {},
@@ -86,7 +86,7 @@ Future<Answer> _personalized(Map params, List<Cookie> cookie) {
     'n': '1000',
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/personalized/playlist',
     data,

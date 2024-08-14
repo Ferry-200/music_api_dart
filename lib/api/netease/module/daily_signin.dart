@@ -7,7 +7,7 @@ part of '../netease.dart';
     未登录 {'android': {'code': 301}, 'web': {'code': 301}}
 */
 Future<Answer> _dailySignin(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/point/dailyTask',
     {"type": params['type'] ?? 0},

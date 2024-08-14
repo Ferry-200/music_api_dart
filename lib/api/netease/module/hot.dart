@@ -6,7 +6,7 @@ Future<Answer> _hotTopic(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 20,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'http://music.163.com/weapi/act/hot',
     data,

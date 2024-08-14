@@ -12,7 +12,7 @@ Future<Answer> _loginCellphone(Map params, List<Cookie> cookie) {
     params['captcha'] == null ? 'password' : 'captcha': params['captcha'] ?? Encrypted(Uint8List.fromList(md5.convert(utf8.encode(params['password'])).bytes)).base16,
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/login/cellphone',
     data,
@@ -24,7 +24,7 @@ Future<Answer> _loginCellphone(Map params, List<Cookie> cookie) {
 
 // 二维码登录检测（轮询）
 Future<Answer> _loginQrCheck(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/login/qrcode/client/login',
     {
@@ -50,7 +50,7 @@ Future<Answer> _loginQrCreate(Map params, List<Cookie> cookie) {
 
 // 二维码Key
 Future<Answer> _loginQrKey(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/login/qrcode/unikey',
     {
@@ -63,7 +63,7 @@ Future<Answer> _loginQrKey(Map params, List<Cookie> cookie) {
 
 // 登录刷新
 Future<Answer> _loginRefresh(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/login/token/refresh',
     {},
@@ -75,7 +75,7 @@ Future<Answer> _loginRefresh(Map params, List<Cookie> cookie) {
 
 // 登录状态
 Future<Answer> _loginStatus(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/w/nuser/account/get',
     {},
@@ -91,7 +91,7 @@ Future<Answer> _login(Map params, List<Cookie> cookie) {
   cookie.add(Cookie('appver', '2.9.7'));
   final data = {'username': params['email'], 'password': Encrypted(Uint8List.fromList(md5.convert(utf8.encode(params['password'])).bytes)).base16, 'rememberLogin': 'true'};
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/login',
     data,
@@ -103,13 +103,13 @@ Future<Answer> _login(Map params, List<Cookie> cookie) {
 
 // 退出登录
 Future<Answer> _logout(Map params, List<Cookie> cookie) {
-  return request('POST', 'https://music.163.com/weapi/logout', {}, crypto: Crypto.weApi, cookies: cookie, ua: 'pc');
+  return _request('POST', 'https://music.163.com/weapi/logout', {}, crypto: Crypto.weApi, cookies: cookie, ua: 'pc');
 }
 
 // 检测手机号码是否已经注册
 Future<Answer> _cellphoneExistenceCheck(Map params, List<Cookie> cookie) {
   final data = {'cellphone': params['phone'], 'countrycode': params['countrycode']};
-  return eApiRequest(
+  return _eApiRequest(
     url: 'http://music.163.com/eapi/cellphone/existence/check',
     optionUrl: '/api/cellphone/existence/check',
     data: data,
@@ -120,7 +120,7 @@ Future<Answer> _cellphoneExistenceCheck(Map params, List<Cookie> cookie) {
 // 检测用户名是否已经注册
 Future<Answer> _activateInitProfile(Map params, List<Cookie> cookie) {
   final data = {'nickname': params['nickname']};
-  return eApiRequest(
+  return _eApiRequest(
     url: 'http://music.163.com/eapi/activate/initProfile',
     optionUrl: '/api/activate/initProfile',
     data: data,

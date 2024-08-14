@@ -1,122 +1,72 @@
 import 'dart:convert';
+import 'dart:math';
 import 'dart:typed_data';
 
 import 'package:crypto/crypto.dart';
 import 'package:encrypt/encrypt.dart';
-import 'package:music_api/api/netease/net_request.dart';
 import 'package:music_api/entity/music_entity.dart';
+import 'package:music_api/http/http_dio.dart';
 import 'package:music_api/utils/answer.dart';
+import 'package:music_api/utils/crypto.dart';
 import 'package:music_api/utils/types.dart';
 import 'package:music_api/utils/utils.dart';
 import 'package:universal_io/io.dart';
-import 'dart:math' as math;
+import 'dart:async';
+import 'dart:io';
 
 part 'module/record.dart';
-
 part 'module/sign.dart';
-
 part 'module/album.dart';
-
 part 'module/artist.dart';
-
 part 'module/banner.dart';
-
 part 'module/batch.dart';
-
 part 'module/calendar.dart';
-
 part 'module/captcha.dart';
-
 part 'module/check_music.dart';
-
 part 'module/cloud_match.dart';
-
 part 'module/comment.dart';
-
 part 'module/countries.dart';
-
 part 'module/daily_signin.dart';
-
 part 'module/digitalAlbum.dart';
-
 part 'module/dj.dart';
-
 part 'module/event.dart';
-
 part 'module/fm.dart';
-
 part 'module/history.dart';
-
 part 'module/homepage.dart';
-
 part 'module/hot.dart';
-
 part 'module/like.dart';
-
 part 'module/listen.dart';
-
 part 'module/login.dart';
-
 part 'module/lyric.dart';
-
 part 'module/msg.dart';
-
 part 'module/musician.dart';
-
 part 'module/mlog.dart';
-
 part 'module/mv.dart';
-
 part 'module/personal.dart';
-
 part 'module/playlist.dart';
-
 part 'module/playmode.dart';
-
 part 'module/recommend.dart';
-
 part 'module/register.dart';
-
 part 'module/related.dart';
-
 part 'module/resource_like.dart';
-
 part 'module/scrobble.dart';
-
 part 'module/search.dart';
-
 part 'module/send.dart';
-
 part 'module/setting.dart';
-
 part 'module/share.dart';
-
 part 'module/simi.dart';
-
 part 'module/song.dart';
-
 part 'module/top.dart';
-
 part 'module/user.dart';
-
 part 'module/video.dart';
-
 part 'module/weblog.dart';
-
 part 'module/vip.dart';
-
 part 'module/yunbei.dart';
-
 part 'module/signin_progress.dart';
-
 part 'module/nickname_check.dart';
-
 part 'module/artist_follow_count.dart';
-
 part 'module/music_tasks_new.dart';
-
 part 'module/playlist_update_playcount.dart';
-
 part 'module/vip_timemachine.dart';
 
 class Netease {
@@ -533,3 +483,154 @@ final _api = <String, Api>{
   "/playlist/update/playcount": _playlistUpdatePlaycount,
   "/vip/timemachine": _vipTimemachine,
 };
+
+enum Crypto { linuxApi, weApi }
+
+String _chooseUserAgent({String? ua}) {
+  const userAgentList = [
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+    'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89;GameHelper',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/602.1.38 (KHTML, like Gecko) Version/10.0 Mobile/14A300 Safari/602.1',
+    'Mozilla/5.0 (iPad; CPU OS 10_0 like Mac OS X) AppleWebKit/602.1.38 (KHTML, like Gecko) Version/10.0 Mobile/14A300 Safari/602.1',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:46.0) Gecko/20100101 Firefox/46.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.1.1 Safari/603.2.4',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:46.0) Gecko/20100101 Firefox/46.0',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/13.10586'
+  ];
+
+  var r = Random();
+  int index;
+  if (ua == 'mobile') {
+    index = (r.nextDouble() * 7).floor();
+  } else if (ua == "pc") {
+    index = (r.nextDouble() * 5).floor() + 8;
+  } else {
+    index = (r.nextDouble() * (userAgentList.length - 1)).floor();
+  }
+  return userAgentList[index];
+}
+
+Map<String, String> _buildHeader(String url, String? ua, String method, List<Cookie> cookies) {
+  final headers = {'User-Agent': _chooseUserAgent(ua: ua)};
+  if (method.toUpperCase() == 'POST') headers['Content-Type'] = 'application/x-www-form-urlencoded';
+  if (url.contains('music.163.com')) headers['Referer'] = 'https://music.163.com';
+  headers['Cookie'] = cookies.join("; ");
+  return headers;
+}
+
+Future<Answer> _eApiRequest({
+  required String url,
+  required String optionUrl,
+  required Map<String, dynamic> data,
+  List<Cookie> cookies = const [],
+  String? ua,
+  String method = 'POST',
+}) {
+  final headers = _buildHeader(url, ua, method, cookies);
+
+  final cookie = {for (var item in cookies) item.name: item.value};
+  final csrfToken = cookie['__csrf'] ?? '';
+  final header = {
+    //系统版本
+    "osver": cookie['osver'],
+    //encrypt.base64.encode(imei + '\t02:00:00:00:00:00\t5106025eb79a5247\t70ffbaac7')
+    "deviceId": cookie['deviceId'],
+    // app版本
+    "appver": cookie['appver'] ?? "8.7.01",
+    //版本号
+    "versioncode": cookie['versioncode'] ?? "140",
+    //设备model
+    "mobilename": cookie['mobilename'],
+    "buildver": cookie['buildver'] ?? (DateTime.now().millisecondsSinceEpoch.toString().substring(0, 10)),
+    //设备分辨率
+    "resolution": cookie['resolution'] ?? "1920x1080",
+    "__csrf": csrfToken,
+    "os": cookie['os'] ?? 'android',
+    "channel": cookie['channel'],
+    "requestId": '${DateTime.now().millisecondsSinceEpoch}_${Random().nextInt(1000).toString().padLeft(4, '0')}'
+  };
+  if (cookie['MUSIC_U'] != null) header["MUSIC_U"] = cookie['MUSIC_U'];
+  if (cookie['MUSIC_A'] != null) header["MUSIC_A"] = cookie['MUSIC_A'];
+  headers['Cookie'] = header.keys.map((key) => '${Uri.encodeComponent(key)}=${Uri.encodeComponent(header[key] ?? '')}').join('; ');
+
+  data['header'] = header;
+  data = eapi(optionUrl, data);
+  url = url.replaceAll(RegExp(r"\w*api"), 'eapi');
+
+  return HttpDio().request(url, method: method, headers: headers, params: data).then((response) async {
+    // final bytes = (await response.expand((e) => e).toList()).cast<int>();
+    //
+    // List<int> data;
+    // try {
+    //   data = zlib.decode(bytes);
+    // } catch (e) {
+    //   //解压失败,不处理
+    //   data = bytes;
+    // }
+    var cookies = response?.headers[HttpHeaders.setCookieHeader] ?? [];
+    var ans = const Answer(site: MusicSite.Netease);
+    ans = ans.copy(cookie: cookies.map((str) => Cookie.fromSetCookieValue(str)).toList());
+    ans = ans.copy(code: response?.statusCode);
+    try {
+      Map content = json.decode(decrypt(response?.data?.toString().codeUnits ?? []));
+      ans = ans.copy(
+        data: content,
+        code: content['code'],
+      );
+    } catch (e) {
+      ans = ans.copy(data: json.decode(response?.data));
+    }
+
+    ans = ans.copy(code: ans.code > 100 && ans.code < 600 ? ans.code : 400);
+    return ans;
+  }).catchError((e, s) {
+    return Answer(site: MusicSite.Netease, code: 502, msg: e.toString(), data: {'code': 502, 'msg': e.toString()});
+  });
+}
+
+///[crypto] 只支持 [Crypto.linuxApi] 和 [Crypto.weApi]
+Future<Answer> _request(
+  String method,
+  String url,
+  Map<String, dynamic> data, {
+  List<Cookie> cookies = const [],
+  String? ua,
+  Crypto crypto = Crypto.weApi,
+}) async {
+  final headers = _buildHeader(url, ua, method, cookies);
+  if (crypto == Crypto.weApi) {
+    var csrfToken = cookies.firstWhere((c) => c.name == "__csrf", orElse: () => Cookie("__csrf", ""));
+    data["csrf_token"] = csrfToken.value;
+    data = weApi(data);
+    url = url.replaceAll(RegExp(r"\w*api"), 'weapi');
+  } else if (crypto == Crypto.linuxApi) {
+    data = linuxApi({"params": data, "url": url.replaceAll(RegExp(r"\w*api"), 'api'), "method": method});
+    headers['User-Agent'] = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36';
+    url = 'https://music.163.com/api/linux/forward';
+  }
+  return HttpDio().request(url, method: method, headers: headers, params: data).then((response) async {
+    var cookies = response?.headers[HttpHeaders.setCookieHeader] ?? [];
+    var ans = const Answer(site: MusicSite.Netease);
+    ans = ans.copy(cookie: cookies.map((str) => Cookie.fromSetCookieValue(str)).toList());
+    ans = ans.copy(code: response?.statusCode);
+
+    // String content = await response.transform(utf8.decoder).join();
+    dynamic body;
+    if (response?.data is String) {
+      body = json.decode(response?.data);
+    } else {
+      body = response?.data;
+    }
+    ans = ans.copy(code: int.parse(body['code'].toString()), data: body);
+    ans = ans.copy(code: ans.code > 100 && ans.code < 600 ? ans.code : 400);
+    return ans;
+  }).catchError((e, s) {
+    return Answer(site: MusicSite.Netease, code: 502, data: {'code': 502, 'msg': e.toString()});
+  });
+}

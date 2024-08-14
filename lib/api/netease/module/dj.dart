@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 //电台banner
 Future<Answer> _djBanner(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'http://music.163.com/weapi/djradio/banner/get',
     const {},
@@ -13,7 +13,7 @@ Future<Answer> _djBanner(Map params, List<Cookie> cookie) {
 
 // 电台非热门类型
 Future<Answer> _djCategoryExcludehot(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'http://music.163.com/weapi/djradio/category/excludehot',
     const {},
@@ -24,7 +24,7 @@ Future<Answer> _djCategoryExcludehot(Map params, List<Cookie> cookie) {
 
 // 电台推荐类型
 Future<Answer> _djCategoryRecommend(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'http://music.163.com/weapi/djradio/category/recommend',
     const {},
@@ -35,7 +35,7 @@ Future<Answer> _djCategoryRecommend(Map params, List<Cookie> cookie) {
 
 //电台分类列表
 Future<Answer> _djCatelist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'http://music.163.com/weapi/djradio/category/get',
     const {},
@@ -46,7 +46,7 @@ Future<Answer> _djCatelist(Map params, List<Cookie> cookie) {
 
 //电台详情
 Future<Answer> _djDetail(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djradio/v2/get',
     {'id': params['rid']},
@@ -61,7 +61,7 @@ Future<Answer> _djHot(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/hot/v1',
     data,
@@ -73,7 +73,7 @@ Future<Answer> _djHot(Map params, List<Cookie> cookie) {
 // 付费电台
 Future<Answer> _djPaygift(Map params, List<Cookie> cookie) {
   final data = {'limit': params['limit'] ?? 30, 'offset': params['offset'] ?? 0};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/home/paygift/list?_nmclfl=1',
     data,
@@ -87,7 +87,7 @@ Future<Answer> _djPersonalizeRcmd(Map params, List<Cookie> cookie) {
   final data = {
     'limit': params['limit'] ?? 6,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djradio/personalize/rcmd',
     data,
@@ -99,7 +99,7 @@ Future<Answer> _djPersonalizeRcmd(Map params, List<Cookie> cookie) {
 // 电台节目详情
 Future<Answer> _djProgramDetail(Map params, List<Cookie> cookie) {
   final data = {'id': params['id']};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/dj/program/detail',
     data,
@@ -114,7 +114,7 @@ Future<Answer> _djProgramToplistHours(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 100,
     // 不支持 offset
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djprogram/toplist/hours',
     data,
@@ -129,7 +129,7 @@ Future<Answer> _djProgramToplist(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 100,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/program/toplist/v1',
     data,
@@ -141,7 +141,7 @@ Future<Answer> _djProgramToplist(Map params, List<Cookie> cookie) {
 // 电台节目列表
 Future<Answer> _djProgram(Map params, List<Cookie> cookie) {
   final data = {'radioId': params['rid'], 'limit': params['limit'] ?? 30, 'offset': params['offset'] ?? 0, 'asc': toBoolean(params['asc'])};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/dj/program/byradio',
     data,
@@ -157,7 +157,7 @@ Future<Answer> _djRadioHot(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 30,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djradio/hot',
     data,
@@ -192,7 +192,7 @@ Future<Answer> _djRadioHot(Map params, List<Cookie> cookie) {
 */
 Future<Answer> _djRecommendType(Map params, List<Cookie> cookie) {
   final data = {'cateId': params['type']};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/recommend',
     data,
@@ -203,7 +203,7 @@ Future<Answer> _djRecommendType(Map params, List<Cookie> cookie) {
 
 // 精选电台
 Future<Answer> _djRecommend(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/recommend/v1',
     {},
@@ -215,7 +215,7 @@ Future<Answer> _djRecommend(Map params, List<Cookie> cookie) {
 // 订阅与取消电台
 Future<Answer> _djSub(Map params, List<Cookie> cookie) {
   params['t'] = (params['t'] == 1 ? 'sub' : 'unsub');
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/${params["t"]}',
     {'id': params['rid']},
@@ -227,7 +227,7 @@ Future<Answer> _djSub(Map params, List<Cookie> cookie) {
 // 订阅电台列表
 Future<Answer> _djSublist(Map params, List<Cookie> cookie) {
   final data = {'limit': params['limit'] ?? 30, 'offset': params['offset'] ?? 0, 'total': true};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/get/subed',
     data,
@@ -239,7 +239,7 @@ Future<Answer> _djSublist(Map params, List<Cookie> cookie) {
 // 电台订阅者列表
 Future<Answer> _djSubscriber(Map params, List<Cookie> cookie) {
   final data = {'time': params['time'] ?? '-1', 'id': params['id'], 'limit': params['limit'] ?? 20, 'total': true};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djradio/subscriber',
     data,
@@ -251,7 +251,7 @@ Future<Answer> _djSubscriber(Map params, List<Cookie> cookie) {
 // 电台今日优选
 Future<Answer> _djTodayPerfered(Map params, List<Cookie> cookie) {
   final data = {'page': params['page'] ?? 0};
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/djradio/home/today/perfered',
     data,
@@ -266,7 +266,7 @@ Future<Answer> _djToplistHours(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 100,
     // 不支持 offset
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/dj/toplist/hours',
     data,
@@ -281,7 +281,7 @@ Future<Answer> _djToplistNewcomer(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 100,
     'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/dj/toplist/newcomer',
     data,
@@ -296,7 +296,7 @@ Future<Answer> _djToplistPay(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 100,
     // 'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djradio/toplist/pay',
     data,
@@ -311,7 +311,7 @@ Future<Answer> _djToplistPopular(Map params, List<Cookie> cookie) {
     'limit': params['limit'] ?? 100,
     // 'offset': params['offset'] ?? 0,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/dj/toplist/popular',
     data,
@@ -330,7 +330,7 @@ Future<Answer> _djToplist(Map params, List<Cookie> cookie) {
     'offset': params['offset'] ?? 0,
     'type': type,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/djradio/toplist',
     data,

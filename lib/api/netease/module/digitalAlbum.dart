@@ -13,7 +13,7 @@ Future<Answer> _digitalAlbumOrdering(Map params, List<Cookie> cookie) {
     "from": 'web',
   };
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/digitalAlbum/purchased',
     data,
@@ -24,7 +24,7 @@ Future<Answer> _digitalAlbumOrdering(Map params, List<Cookie> cookie) {
 
 //我的数字专辑
 Future<Answer> _digitalAlbumPurchased(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/api/digitalAlbum/purchased',
     {

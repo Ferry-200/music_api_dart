@@ -7,7 +7,7 @@ Future<Answer> _simiArtist(Map params, List<Cookie> cookie) {
         '8aae43f148f990410b9a2af38324af24e87ab9227c9265627ddd10145db744295fcd8701dc45b1ab8985e142f491516295dd965bae848761274a577a62b0fdc54a50284d1e434dcc04ca6d1a52333c9a'));
   }
 
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/discovery/simiArtist',
     {
@@ -20,7 +20,7 @@ Future<Answer> _simiArtist(Map params, List<Cookie> cookie) {
 
 // 相似MV
 Future<Answer> _simiMv(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/discovery/simiMv',
     {
@@ -33,7 +33,7 @@ Future<Answer> _simiMv(Map params, List<Cookie> cookie) {
 
 // 相似歌单
 Future<Answer> _simiPlaylist(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
       'POST',
       'https://music.163.com/weapi/discovery/simiPlaylist',
       {
@@ -47,7 +47,7 @@ Future<Answer> _simiPlaylist(Map params, List<Cookie> cookie) {
 
 // 相似歌曲
 Future<Answer> _simiSong(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/discovery/simiSong',
     {
@@ -61,7 +61,7 @@ Future<Answer> _simiSong(Map params, List<Cookie> cookie) {
 }
 
 Future<Answer> _simiUser(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/discovery/simiUser',
     {

@@ -2,7 +2,7 @@ part of '../netease.dart';
 
 // 默认搜索关键词
 Future<Answer> _searchDefaultKeyword(Map params, List<Cookie> cookie) {
-  return eApiRequest(
+  return _eApiRequest(
     url: 'https://interface3.music.163.com/eapi/search/defaultkeyword/get',
     optionUrl: '/api/search/defaultkeyword/get',
     data: {},
@@ -12,7 +12,7 @@ Future<Answer> _searchDefaultKeyword(Map params, List<Cookie> cookie) {
 
 // 热搜列表
 Future<Answer> _searchHotDetail(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/hotsearchlist/get',
     {},
@@ -23,7 +23,7 @@ Future<Answer> _searchHotDetail(Map params, List<Cookie> cookie) {
 
 // 热门搜索
 Future<Answer> _searchHot(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/search/hot',
     {'type': 1111},
@@ -35,7 +35,7 @@ Future<Answer> _searchHot(Map params, List<Cookie> cookie) {
 
 // 多类型搜索
 Future<Answer> _searchMultimatch(Map params, List<Cookie> cookie) {
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/search/suggest/multimatch',
     {
@@ -50,7 +50,7 @@ Future<Answer> _searchMultimatch(Map params, List<Cookie> cookie) {
 // 搜索建议
 Future<Answer> _searchSuggest(Map params, List<Cookie> cookie) {
   final type = params['type'] == 'mobile' ? 'keyword' : 'web';
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/search/suggest/$type',
     {'s': params['keywords'] ?? ''},
@@ -74,7 +74,7 @@ Future<Answer> _search(Map params, List<Cookie> cookie) {
       'limit': num,
       'offset': offset,
     };
-    return request(
+    return _request(
       'POST',
       'https://music.163.com/api/search/voice/get',
       data,
@@ -90,7 +90,7 @@ Future<Answer> _search(Map params, List<Cookie> cookie) {
     'limit': num,
     'offset': offset,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/search/get',
     data,
@@ -112,5 +112,5 @@ Future<Answer> _cloudSearch(Map params, List<Cookie> cookie) {
     'limit': num,
     'offset': offset
   };
-  return request('POST', 'https://music.163.com/api/cloudsearch/pc', data, crypto: Crypto.weApi, cookies: cookie);
+  return _request('POST', 'https://music.163.com/api/cloudsearch/pc', data, crypto: Crypto.weApi, cookies: cookie);
 }

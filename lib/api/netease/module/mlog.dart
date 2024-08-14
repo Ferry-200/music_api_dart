@@ -5,7 +5,7 @@ Future<Answer> _mlogToVideo (Map params, List<Cookie> cookie) {
   final data = {
     'mlogId': params['id'],
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mlog/video/convert/id',
     data,
@@ -21,7 +21,7 @@ Future<Answer> _mlogUrl (Map params, List<Cookie> cookie) {
     'resolution': params['res'] ?? 1080,
     'type': 1,
   };
-  return request(
+  return _request(
     'POST',
     'https://music.163.com/weapi/mlog/detail/v1',
     data,
@@ -40,7 +40,7 @@ Future<Answer> _mlogMusicRcmd (Map params, List<Cookie> cookie) {
       'songId': params['songId'],
     }),
   };
-  return request(
+  return _request(
     'POST',
     'https://interface.music.163.com/eapi/mlog/rcmd/feed/list',
     data,
