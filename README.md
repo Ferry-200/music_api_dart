@@ -1,3 +1,9 @@
+# MusicApi compatiple with pure Dart
+- 只保留三个源
+- 完善了一些响应的结构
+- 优化目录结构
+- make Dart analyzer happy
+
 # MusicApi
 
 ## 可能很少更新，有问题的话提issues，看到会改的
