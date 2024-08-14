@@ -98,15 +98,16 @@ Future<Answer> _songLyric3(Map params, List<Cookie> cookie) {
 
     var lrc = XmlDocument.parse(data);
 
-    var content = lrc.findAllElements('content').firstOrNull?.innerText;
-
-    String decompressedString = QrcDecoder.decode(content ?? "");
-
-    var qrc = XmlDocument.parse(decompressedString);
+    var qrcContent = lrc.findAllElements('content').firstOrNull?.innerText;
+    String decompressedQrcString = QrcDecoder.decode(qrcContent ?? "");
+    var qrc = XmlDocument.parse(decompressedQrcString);
 
     var cc = qrc.findAllElements('Lyric_1').firstOrNull?.attributes.firstWhere((p0) => p0.localName == 'LyricContent').value;
 
-    var dd = {"lyric": cc};
+    var qrcTransContent = lrc.findAllElements('contentts').firstOrNull?.innerText;
+    String decompressedQrcTransString = QrcDecoder.decode(qrcTransContent ?? "");
+
+    var dd = {"lyric": cc, "trans": decompressedQrcTransString.isEmpty ? null : decompressedQrcTransString};
 
     return Future.value(value.copy(data: dd));
   });
