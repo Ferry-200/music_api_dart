@@ -1,0 +1,258 @@
+{
+    "code": 200,
+    "msg": "操作成功",
+    "data": {
+        "code": 0,
+        "ts": 1723633971739,
+        "start_ts": 1723633971704,
+        "traceid": "5f506342173ae9e9",
+        "songInfo": {
+            "code": 0,
+            "data": {
+                "info": {
+                    "company": {
+                        "title": "唱片公司",
+                        "type": "JUMP_TO_COMPANY",
+                        "content": [
+                            {
+                                "id": 0,
+                                "value": "(P) 2024 Aniplex Inc.",
+                                "mid": "",
+                                "type": 0,
+                                "show_type": 0,
+                                "is_parent": 0,
+                                "picurl": "",
+                                "read_cnt": 0,
+                                "author": "",
+                                "jumpurl": "",
+                                "ori_picurl": ""
+                            }
+                        ],
+                        "pos": 51,
+                        "more": 0,
+                        "selected": "company",
+                        "use_platform": 1
+                    },
+                    "genre": {
+                        "title": "歌曲流派",
+                        "type": "JUMP_TO_CATEGORY",
+                        "content": [
+                            {
+                                "id": 0,
+                                "value": "Soundtrack",
+                                "mid": "",
+                                "type": 0,
+                                "show_type": 0,
+                                "is_parent": 0,
+                                "picurl": "",
+                                "read_cnt": 0,
+                                "author": "",
+                                "jumpurl": "",
+                                "ori_picurl": ""
+                            }
+                        ],
+                        "pos": 12,
+                        "more": 0,
+                        "selected": "genre",
+                        "use_platform": 3
+                    },
+                    "lan": {
+                        "title": "歌曲语种",
+                        "type": "JUMP_TO_CATEGORY",
+                        "content": [
+                            {
+                                "id": 5,
+                                "value": "日语",
+                                "mid": "",
+                                "type": 0,
+                                "show_type": 2,
+                                "is_parent": 0,
+                                "picurl": "",
+                                "read_cnt": 0,
+                                "author": "",
+                                "jumpurl": "http://y.qq.com/m/client/categoryzone/detail.html?categoryId=5&showType=2&isParent=0&_hidehd=1&groupId=100",
+                                "ori_picurl": ""
+                            }
+                        ],
+                        "pos": 11,
+                        "more": 0,
+                        "selected": "lan",
+                        "use_platform": 3
+                    },
+                    "pub_time": {
+                        "title": "发行时间",
+                        "type": "desc",
+                        "content": [
+                            {
+                                "id": 0,
+                                "value": "2024-07-14",
+                                "mid": "",
+                                "type": 0,
+                                "show_type": 0,
+                                "is_parent": 0,
+                                "picurl": "",
+                                "read_cnt": 0,
+                                "author": "",
+                                "jumpurl": "",
+                                "ori_picurl": ""
+                            }
+                        ],
+                        "pos": 50,
+                        "more": 0,
+                        "selected": "pub_time",
+                        "use_platform": 0
+                    }
+                },
+                "extras": {
+                    "name": "LOVE 2000",
+                    "transname": "",
+                    "subtitle": "《败犬女主太多了!》TV动画片尾曲",
+                    "from": "0",
+                    "wikiurl": ""
+                },
+                "track_info": {
+                    "id": 498054208,
+                    "type": 0,
+                    "mid": "000QhBeg2M2Uyf",
+                    "name": "LOVE 2000",
+                    "title": "LOVE 2000",
+                    "subtitle": "《败犬女主太多了!》TV动画片尾曲",
+                    "singer": [
+                        {
+                            "id": 3194021,
+                            "mid": "004XAiY31WP8j3",
+                            "name": "遠野ひかる",
+                            "title": "遠野ひかる",
+                            "type": 1,
+                            "uin": 0
+                        }
+                    ],
+                    "album": {
+                        "id": 52625641,
+                        "mid": "004DATSp0iTcje",
+                        "name": "LOVE 2000",
+                        "title": "LOVE 2000",
+                        "subtitle": "《败犬女主太多了!》TV动画片尾曲",
+                        "time_public": "2024-07-14",
+                        "pmid": "004DATSp0iTcje_1"
+                    },
+                    "mv": {
+                        "id": 0,
+                        "vid": "",
+                        "name": "",
+                        "title": "",
+                        "vt": 0
+                    },
+                    "interval": 263,
+                    "isonly": 0,
+                    "language": 3,
+                    "genre": 37,
+                    "index_cd": 0,
+                    "index_album": 1,
+                    "time_public": "2024-07-14",
+                    "status": 0,
+                    "fnote": 4009,
+                    "file": {
+                        "media_mid": "000QhBeg2M2Uyf",
+                        "size_24aac": 0,
+                        "size_48aac": 1600139,
+                        "size_96aac": 3203511,
+                        "size_192ogg": 6241438,
+                        "size_192aac": 6356539,
+                        "size_128mp3": 4217870,
+                        "size_320mp3": 10544309,
+                        "size_ape": 0,
+                        "size_flac": 0,
+                        "size_dts": 0,
+                        "size_try": 960887,
+                        "try_begin": 89954,
+                        "try_end": 112946,
+                        "url": "",
+                        "size_hires": 0,
+                        "hires_sample": 0,
+                        "hires_bitdepth": 0,
+                        "b_30s": 0,
+                        "e_30s": 60000,
+                        "size_96ogg": 2998232,
+                        "size_360ra": [],
+                        "size_dolby": 0,
+                        "size_new": [
+                            207264711,
+                            33414108,
+                            85977296,
+                            11749179,
+                            0,
+                            24548067
+                        ]
+                    },
+                    "pay": {
+                        "pay_month": 1,
+                        "price_track": 200,
+                        "price_album": 0,
+                        "pay_play": 0,
+                        "pay_down": 1,
+                        "pay_status": 0,
+                        "time_free": 0
+                    },
+                    "action": {
+                        "switch": 16889603,
+                        "msgid": 14,
+                        "alert": 2,
+                        "icons": 8535932,
+                        "msgshare": 0,
+                        "msgfav": 0,
+                        "msgdown": 0,
+                        "msgpay": 6,
+                        "switch2": 524288,
+                        "icon2": 134217728
+                    },
+                    "ksong": {
+                        "id": 145692464,
+                        "mid": "004AKqlH0i65zS"
+                    },
+                    "volume": {
+                        "gain": -11.479,
+                        "peak": 1,
+                        "lra": 5.02
+                    },
+                    "label": "0",
+                    "url": "",
+                    "bpm": 0,
+                    "version": 0,
+                    "trace": "",
+                    "data_type": 0,
+                    "modify_stamp": 0,
+                    "pingpong": "",
+                    "ppurl": "",
+                    "tid": 0,
+                    "ov": 0,
+                    "sa": 0,
+                    "es": "",
+                    "vs": [
+                        "062cuuFf2suzEM",
+                        "",
+                        "",
+                        "000zWERP0hFhJp",
+                        "000NP3rl3NzTac",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "001N7s6V3wftia",
+                        "",
+                        ""
+                    ],
+                    "vi": [
+                        5
+                    ],
+                    "ktag": "0",
+                    "vf": [
+                        -11.0913,
+                        0.999969,
+                        5.03155
+                    ]
+                }
+            }
+        }
+    }
+}

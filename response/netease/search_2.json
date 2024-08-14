@@ -1,0 +1,1026 @@
+{
+    "code": 200,
+    "msg": "操作成功",
+    "data": {
+        "result": {
+            "songs": [
+                {
+                    "id": 4053046,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 409766,
+                        "name": "Leave a Light",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 283968000007,
+                        "size": 10,
+                        "copyrightId": 5003,
+                        "status": 1,
+                        "picId": 1760318116076738,
+                        "mark": 0
+                    },
+                    "duration": 213200,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 441102548,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 20878,
+                            "name": "ONE OK ROCK",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 34923761,
+                        "name": "Ambitions",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1484236800000,
+                        "size": 14,
+                        "copyrightId": 7002,
+                        "status": 1,
+                        "picId": 109951166562835266,
+                        "alia": [
+                            "壮志雄心"
+                        ],
+                        "mark": 0
+                    },
+                    "duration": 216933,
+                    "copyrightId": 7002,
+                    "status": 0,
+                    "alias": [
+                        "单程车票"
+                    ],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 2125939230,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 1182513,
+                            "name": "Rudy Meyns",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 185768405,
+                        "name": "One Way Ticket",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1484496000000,
+                        "size": 1,
+                        "copyrightId": 743010,
+                        "status": 1,
+                        "picId": 109951169331851429,
+                        "mark": 0
+                    },
+                    "duration": 181905,
+                    "copyrightId": 743010,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270464
+                },
+                {
+                    "id": 5221921,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 509822,
+                        "name": "Greatest Hits Of The Millennium 70's Vol. 3",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 915120000007,
+                        "size": 59,
+                        "copyrightId": 7001,
+                        "status": 1,
+                        "picId": 777354720881681,
+                        "mark": 0
+                    },
+                    "duration": 213200,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 453185041,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 20878,
+                            "name": "ONE OK ROCK",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 35123135,
+                        "name": "Ambitions [日本盤]",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1484064000007,
+                        "size": 14,
+                        "copyrightId": 0,
+                        "status": 1,
+                        "transNames": [
+                            "壮志雄心"
+                        ],
+                        "picId": 18764265441339024,
+                        "mark": 0
+                    },
+                    "duration": 216928,
+                    "copyrightId": 7002,
+                    "status": 0,
+                    "alias": [
+                        "单程车票"
+                    ],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 0,
+                    "rUrl": null,
+                    "mark": 17717002368
+                },
+                {
+                    "id": 26438673,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 2500224,
+                        "name": "Die Hit Giganten Best of Disco",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1369152000007,
+                        "size": 63,
+                        "copyrightId": 7001,
+                        "status": 1,
+                        "picId": 2345258302103455,
+                        "mark": 0
+                    },
+                    "duration": 216000,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 189042,
+                    "name": "油脂热潮",
+                    "artists": [
+                        {
+                            "id": 6457,
+                            "name": "张国荣",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 19126,
+                        "name": "情人箭",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 297792000000,
+                        "size": 11,
+                        "copyrightId": 7003,
+                        "status": 1,
+                        "picId": 109951167138389565,
+                        "mark": 0
+                    },
+                    "duration": 188040,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17179877376
+                },
+                {
+                    "id": 4872498,
+                    "name": "One way ticket",
+                    "artists": [
+                        {
+                            "id": 122455,
+                            "name": "群星",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 489762,
+                        "name": "家好月圆 电视剧原声带",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1250179200000,
+                        "size": 39,
+                        "copyrightId": 5003,
+                        "status": 1,
+                        "picId": 109951163298646087,
+                        "mark": 0
+                    },
+                    "duration": 213200,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 5477319,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 5305633,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 516909,
+                        "name": "말죽거리 잔혹사 OST",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1074182400000,
+                        "size": 26,
+                        "copyrightId": 0,
+                        "status": 1,
+                        "picId": 310062279039458,
+                        "alia": [
+                            "马粥街残酷史"
+                        ],
+                        "mark": 0
+                    },
+                    "duration": 213200,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 1452570084,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 28193738,
+                            "name": "Tom McKenzie",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 90249955,
+                        "name": "Take Some Time",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1590681600000,
+                        "size": 5,
+                        "copyrightId": 1416074,
+                        "status": 1,
+                        "picId": 109951165033102388,
+                        "mark": 0
+                    },
+                    "duration": 213679,
+                    "copyrightId": 1416074,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 1656176,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 38170,
+                            "name": "L.A. Guns",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 167985,
+                        "name": "L.A. Guns",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 567964800000,
+                        "size": 11,
+                        "copyrightId": 7003,
+                        "status": 1,
+                        "picId": 6634453162208660,
+                        "mark": 0
+                    },
+                    "duration": 260365,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 2091638540,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 258948,
+                            "name": "Priya Ragu",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 177047233,
+                        "name": "Santhosam",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1697731200000,
+                        "size": 15,
+                        "copyrightId": 7002,
+                        "status": 1,
+                        "picId": 109951168989304220,
+                        "mark": 0
+                    },
+                    "duration": 177323,
+                    "copyrightId": 7002,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 1981056483,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 12262073,
+                            "name": "Bazzi",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 151508412,
+                        "name": "Infinite Dream",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1663257600000,
+                        "size": 19,
+                        "copyrightId": 7002,
+                        "status": 1,
+                        "picId": 109951167874373454,
+                        "mark": 0
+                    },
+                    "duration": 133421,
+                    "copyrightId": 7002,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 559866012,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 38727671,
+                        "name": "Haynes Ultimate Guide to 70s",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1526572800000,
+                        "size": 60,
+                        "copyrightId": 7001,
+                        "status": 1,
+                        "picId": 109951165984002348,
+                        "mark": 0
+                    },
+                    "duration": 214738,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 3557355,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 78207,
+                            "name": "The Mamas & the Papas",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 360555,
+                        "name": "Beautiful Thing [O.S.T]",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 845913600007,
+                        "size": 16,
+                        "copyrightId": 5003,
+                        "status": 1,
+                        "picId": 18559756278512084,
+                        "mark": 0
+                    },
+                    "duration": 167000,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 27689416,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 2660226,
+                        "name": "Radio 2 Topcollectie 40 Jaar Disco",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1373558400007,
+                        "size": 95,
+                        "copyrightId": 5003,
+                        "status": 1,
+                        "picId": 6644348767594558,
+                        "mark": 0
+                    },
+                    "duration": 222000,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 1304359367,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 12636495,
+                            "name": "DJ Disco",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 72471989,
+                        "name": "Disco Hits, Vol. 1",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1447257600007,
+                        "size": 20,
+                        "copyrightId": 1416618,
+                        "status": 1,
+                        "picId": 109951165883435979,
+                        "mark": 0
+                    },
+                    "duration": 213813,
+                    "copyrightId": 1416618,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 1301309004,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 72280580,
+                        "name": "The Best Year Of My Life: 1979",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1272816000007,
+                        "size": 20,
+                        "copyrightId": 7001,
+                        "status": 1,
+                        "picId": 109951165674087559,
+                        "mark": 0
+                    },
+                    "duration": 213200,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 5477319,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 4053134,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 409773,
+                        "name": "I Can't Stand the Rain",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 252432000007,
+                        "size": 16,
+                        "copyrightId": 5003,
+                        "status": 1,
+                        "picId": 658607465082085,
+                        "mark": 0
+                    },
+                    "duration": 216000,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 410399224,
+                    "name": "One Way Ticket",
+                    "artists": [
+                        {
+                            "id": 91767,
+                            "name": "Eruption",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 34658199,
+                        "name": "Radio Zet Gold Zawsze Wielkie Przeboje Vol. 2",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1403539200000,
+                        "size": 36,
+                        "copyrightId": 7002,
+                        "status": 3,
+                        "picId": 109951163368946331,
+                        "mark": 0
+                    },
+                    "duration": 215562,
+                    "copyrightId": 7002,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14337628,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 17180139520
+                }
+            ],
+            "hasMore": true,
+            "songCount": 301
+        },
+        "code": 200
+    }
+}

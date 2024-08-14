@@ -1,0 +1,114 @@
+{
+    "code": 200,
+    "msg": "操作成功",
+    "data": {
+        "data": {
+            "authors": [
+                {
+                    "birthday": "",
+                    "is_publish": 1,
+                    "author_name": "遠野ひかる",
+                    "author_id": 838295,
+                    "language": "日本",
+                    "identity": 1,
+                    "country": "日本",
+                    "avatar": "",
+                    "type": 0
+                }
+            ],
+            "hash": "31F776A095C8A596301166F4642E1769",
+            "author_name": "遠野ひかる",
+            "imgUrl": "",
+            "status": 1,
+            "audio_id": 368485948,
+            "ctype": 1009,
+            "choricSinger": "遠野ひかる",
+            "fileHead": 0,
+            "fail_process": 0,
+            "fileSize": 4217870,
+            "bitRate": 128,
+            "voice_ad": 0,
+            "audition_status": 0,
+            "mvhash": "",
+            "fileName": "遠野ひかる - LOVE 2000",
+            "intro": "",
+            "highprivilege": 0,
+            "topic_url": "",
+            "store_type": "audio",
+            "songName": "LOVE 2000",
+            "pay_type": 0,
+            "backup_url": [
+                "https://sharefs.hw.kugou.com/202408141901/238f300ea0d75ac00f0ae713e333a570/v3/31f776a095c8a596301166f4642e1769/yp/full/ap1000_us0_pi409_s2881482543.mp3"
+            ],
+            "req_hash": "31F776A095C8A596301166F4642E1769",
+            "old_cpy": 0,
+            "singerHead": "",
+            "time": 1723633277,
+            "area_code": "1",
+            "singerName": "遠野ひかる",
+            "req_albumid": "98852971",
+            "album_category": 1,
+            "topic_remark": "",
+            "albumid": 98852971,
+            "sqprivilege": 0,
+            "publish_self_flag": 0,
+            "url": "https://sharefs.tx.kugou.com/202408141901/ed1d649476a5f6995843b1f0b15622a6/v3/31f776a095c8a596301166f4642e1769/yp/full/ap1000_us0_pi409_s2881482543.mp3",
+            "extra": {
+                "320hash": "AB3A9F60142DC4CBC032EC3ECB3B085C",
+                "128timelength": 263575,
+                "sqfilesize": 0,
+                "sqhash": "",
+                "320timelength": 263575,
+                "sqtimelength": 0,
+                "sqbitrate": 0,
+                "highhash": "",
+                "128bitrate": 128,
+                "hightimelength": 0,
+                "320filesize": 10544309,
+                "highfilesize": 0,
+                "highbitrate": 0,
+                "128hash": "31F776A095C8A596301166F4642E1769",
+                "128filesize": 4217870
+            },
+            "stype": 11323,
+            "trans_param": {
+                "ogg_320_filesize": 11749179,
+                "ogg_320_hash": "6A15E697731EE4CE4EDCDFF787349C11",
+                "ogg_128_filesize": 2998232,
+                "ogg_128_hash": "BEE06F8A446C39927D5E74B630D92317",
+                "cpy_grade": 5,
+                "classmap": {
+                    "attr0": 234881032
+                },
+                "display_rate": 0,
+                "language": "日语",
+                "cid": 406591901,
+                "qualitymap": {
+                    "attr0": 859799572
+                },
+                "cpy_attr0": 8192,
+                "ipmap": {
+                    "attr0": 2148544516
+                },
+                "pay_block_tpl": 1,
+                "musicpack_advance": 0,
+                "display": 0,
+                "cpy_level": 1
+            },
+            "audio_group_id": 435158583,
+            "album_img": "http://imge.kugou.com/stdmusic/{size}/20240702/20240702204402976971.jpg",
+            "album_audio_id": 652173050,
+            "timeLength": 263,
+            "q": 0,
+            "privilege": 8,
+            "extName": "mp3",
+            "error": "",
+            "320privilege": 10,
+            "singerId": 838295,
+            "128privilege": 8
+        },
+        "errcode": 0,
+        "status": 1,
+        "error": ""
+    }
+}

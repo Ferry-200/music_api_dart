@@ -1,0 +1,1067 @@
+{
+    "code": 200,
+    "msg": "操作成功",
+    "data": {
+        "result": {
+            "songs": [
+                {
+                    "id": 2604307454,
+                    "name": "LOVE 2000",
+                    "artists": [
+                        {
+                            "id": 33947223,
+                            "name": "遠野ひかる",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 241003755,
+                        "name": "LOVE 2000",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1720886400000,
+                        "size": 1,
+                        "copyrightId": 2706476,
+                        "status": 1,
+                        "picId": 109951169743863380,
+                        "mark": 0
+                    },
+                    "duration": 263575,
+                    "copyrightId": 2706476,
+                    "status": 0,
+                    "alias": [
+                        "TV动画《败犬女主也太多了!》 第1话片尾曲"
+                    ],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 574547,
+                    "name": "Love 2000",
+                    "artists": [
+                        {
+                            "id": 16403,
+                            "name": "hitomi",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 54059,
+                        "name": "Love 2000",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 962121600007,
+                        "size": 1,
+                        "copyrightId": 457010,
+                        "status": 1,
+                        "transNames": [
+                            "真爱 2000"
+                        ],
+                        "picId": 18537766046079739,
+                        "mark": 0
+                    },
+                    "duration": 265900,
+                    "copyrightId": 457010,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "transNames": [
+                        "真爱 2000"
+                    ],
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 9007199255011456
+                },
+                {
+                    "id": 4898194,
+                    "name": "LOVE2000",
+                    "artists": [
+                        {
+                            "id": 138776,
+                            "name": "Hitomi",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 491415,
+                        "name": "Around 40’s Karaoke Best Songs“Sing!Sing!Sing!2”",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1253030400007,
+                        "size": 16,
+                        "copyrightId": 0,
+                        "status": 1,
+                        "picId": 1664660604462712,
+                        "mark": 0
+                    },
+                    "duration": 265900,
+                    "copyrightId": 663018,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 0,
+                    "rUrl": null,
+                    "mark": 9007199255003136
+                },
+                {
+                    "id": 22749531,
+                    "name": "LOVE 2000",
+                    "artists": [
+                        {
+                            "id": 16403,
+                            "name": "hitomi",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 2089343,
+                        "name": "peace",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1196784000007,
+                        "size": 33,
+                        "copyrightId": 457010,
+                        "status": 1,
+                        "picId": 18824738580965103,
+                        "mark": 0
+                    },
+                    "duration": 266573,
+                    "copyrightId": 457010,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "transNames": [
+                        "真爱 2000"
+                    ],
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 9007199255011456
+                },
+                {
+                    "id": 1355872007,
+                    "name": "LOVE2000",
+                    "artists": [
+                        {
+                            "id": 741164,
+                            "name": "昆夏美",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 78268487,
+                        "name": "アニマエール! ミュージックエール! コレクション",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1545753600000,
+                        "size": 38,
+                        "copyrightId": 663018,
+                        "status": 0,
+                        "picId": 109951163967428864,
+                        "mark": 0
+                    },
+                    "duration": 264293,
+                    "copyrightId": 663018,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 0,
+                    "rUrl": null,
+                    "mark": 262144
+                },
+                {
+                    "id": 19762789,
+                    "name": "Mambo 2000",
+                    "artists": [
+                        {
+                            "id": 46066,
+                            "name": "Warren Hill",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 1823378,
+                        "name": "Love Life",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 946656000000,
+                        "size": 11,
+                        "copyrightId": 7003,
+                        "status": 1,
+                        "picId": 2542070883743957,
+                        "mark": 0
+                    },
+                    "duration": 379226,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17180139520
+                },
+                {
+                    "id": 1850183809,
+                    "name": "This Love",
+                    "artists": [
+                        {
+                            "id": 96266,
+                            "name": "Maroon 5",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 128411663,
+                        "name": "Pop Of the 2000s",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1622736000000,
+                        "size": 36,
+                        "copyrightId": 7003,
+                        "status": 1,
+                        "picId": 109951168146316546,
+                        "mark": 0
+                    },
+                    "duration": 205746,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 22749624,
+                    "name": "LOVE 2000",
+                    "artists": [
+                        {
+                            "id": 16403,
+                            "name": "hitomi",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 2089349,
+                        "name": "LOVE LIFE",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 976636800007,
+                        "size": 13,
+                        "copyrightId": 457010,
+                        "status": 1,
+                        "transNames": [
+                            "恋爱生活"
+                        ],
+                        "picId": 18766464464682773,
+                        "mark": 0
+                    },
+                    "duration": 263366,
+                    "copyrightId": 457010,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "transNames": [
+                        "真爱 2000"
+                    ],
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 9007199255011456
+                },
+                {
+                    "id": 1340120382,
+                    "name": "LOVE2000 (Instrumental)",
+                    "artists": [
+                        {
+                            "id": 14779,
+                            "name": "manzo",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        {
+                            "id": 12047291,
+                            "name": "堤博明",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 75205798,
+                        "name": "TVアニメ「アニマエール!」オリジナルサウンドトラック",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1547568000000,
+                        "size": 52,
+                        "copyrightId": 663018,
+                        "status": 0,
+                        "picId": 109951163797837350,
+                        "alia": [
+                            "TV动画《Anima Yell!》原声带"
+                        ],
+                        "mark": 0
+                    },
+                    "duration": 68013,
+                    "copyrightId": 663018,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 0,
+                    "rUrl": null,
+                    "mark": 262144
+                },
+                {
+                    "id": 2610757997,
+                    "name": "Freaky",
+                    "artists": [
+                        {
+                            "id": 13901568,
+                            "name": "Kenyon Dixon",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 242975816,
+                        "name": "The R&B You Love: For the '99 and the 2000s",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1723132800000,
+                        "size": 7,
+                        "copyrightId": 743010,
+                        "status": 1,
+                        "picId": 109951169810343400,
+                        "mark": 0
+                    },
+                    "duration": 207399,
+                    "copyrightId": 743010,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270464
+                },
+                {
+                    "id": 1965521858,
+                    "name": "Wanna Be Loved",
+                    "artists": [
+                        {
+                            "id": 37447,
+                            "name": "Joey Bada$$",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        {
+                            "id": 12232106,
+                            "name": "JID",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 148375840,
+                        "name": "2000",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1658419200000,
+                        "size": 14,
+                        "copyrightId": 7001,
+                        "status": 1,
+                        "picId": 109951167698804332,
+                        "mark": 0
+                    },
+                    "duration": 215550,
+                    "copyrightId": 7001,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 14546087,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 17181188096
+                },
+                {
+                    "id": 26095968,
+                    "name": "LOVE 2000",
+                    "artists": [
+                        {
+                            "id": 0,
+                            "name": "新井ひとも",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 2386512,
+                        "name": "东京女子カフェ #1 a-bossa",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1345564800007,
+                        "size": 9,
+                        "copyrightId": 0,
+                        "status": 1,
+                        "picId": 2340860255557810,
+                        "mark": 0
+                    },
+                    "duration": 325000,
+                    "copyrightId": 663018,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 0,
+                    "rUrl": null,
+                    "mark": 9007199255003136
+                },
+                {
+                    "id": 2056132463,
+                    "name": "Where Is The Love?",
+                    "artists": [
+                        {
+                            "id": 88146,
+                            "name": "Black Eyed Peas",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 167743958,
+                        "name": "Hip Hop Années 2000",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1686844800000,
+                        "size": 58,
+                        "copyrightId": 7003,
+                        "status": 1,
+                        "picId": 109951168680781471,
+                        "mark": 0
+                    },
+                    "duration": 273813,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 2609051647,
+                    "name": "LOVE 2000（原版翻唱）",
+                    "artists": [
+                        {
+                            "id": 61535220,
+                            "name": "TE.D",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 242477012,
+                        "name": "那些年被翻唱过的好歌18",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1721232000000,
+                        "size": 0,
+                        "copyrightId": 2713520,
+                        "status": 1,
+                        "picId": 109951169792720755,
+                        "mark": 0
+                    },
+                    "duration": 263545,
+                    "copyrightId": 2713520,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 262144
+                },
+                {
+                    "id": 2032461735,
+                    "name": "2000's LOVE",
+                    "artists": [
+                        {
+                            "id": 35509857,
+                            "name": "King Ernst",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 162270219,
+                        "name": "2000's LOVE",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1679587200000,
+                        "size": 1,
+                        "copyrightId": 1416692,
+                        "status": 1,
+                        "picId": 109951168487755073,
+                        "mark": 0
+                    },
+                    "duration": 149133,
+                    "copyrightId": 1416692,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 1318912
+                },
+                {
+                    "id": 1317226054,
+                    "name": "Love 2000(LIVE ver.)",
+                    "artists": [
+                        {
+                            "id": 30890445,
+                            "name": "そやねん!",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 73878718,
+                        "name": "青春アカペラ甲子園 全国ハモネプリーグ2010冬",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1266940800000,
+                        "size": 15,
+                        "copyrightId": 22036,
+                        "status": 1,
+                        "picId": 109951165826431253,
+                        "mark": 0
+                    },
+                    "duration": 97733,
+                    "copyrightId": 2709832,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 26219316,
+                    "name": "マジLOVE2000%",
+                    "artists": [
+                        {
+                            "id": 21651,
+                            "name": "ST☆RISH",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 2422542,
+                        "name": "マジLOVE2000%",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1366732800000,
+                        "size": 4,
+                        "copyrightId": 756010,
+                        "status": 1,
+                        "picId": 109951163830393578,
+                        "mark": 0
+                    },
+                    "duration": 227533,
+                    "copyrightId": 756010,
+                    "status": 0,
+                    "alias": [
+                        "TVアニメ「うたの☆プリンスさまっ♪ マジLOVE2000%」OP第1話のみ放映テーマ"
+                    ],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "transNames": [
+                        "真实LOVE2000%"
+                    ],
+                    "mvid": 5365832,
+                    "fee": 1,
+                    "rUrl": null,
+                    "mark": 9007216434880512
+                },
+                {
+                    "id": 2026368482,
+                    "name": "LOVE 2000 (Cover Ver.) [Mixed]",
+                    "artists": [
+                        {
+                            "id": 47228312,
+                            "name": "Woman Cover Project",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 160914854,
+                        "name": "J-GIGAHITS -2000～2009- (DJ MIX)",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1677600000000,
+                        "size": 49,
+                        "copyrightId": 1418220,
+                        "status": 1,
+                        "picId": 109951168433214601,
+                        "mark": 0
+                    },
+                    "duration": 64000,
+                    "copyrightId": 1418220,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                },
+                {
+                    "id": 473279229,
+                    "name": "再见!我的爱人",
+                    "artists": [
+                        {
+                            "id": 7570,
+                            "name": "邓丽君",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 35411618,
+                        "name": "环球2000超巨星系列 - 邓丽君",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 915120000000,
+                        "size": 17,
+                        "copyrightId": 7003,
+                        "status": 1,
+                        "picId": 109951169245221384,
+                        "mark": 0
+                    },
+                    "duration": 209160,
+                    "copyrightId": 7003,
+                    "status": 0,
+                    "alias": [
+                        "《Goodbye My Love》"
+                    ],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "transNames": [
+                        "Goodbye My Love"
+                    ],
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 17179877376
+                },
+                {
+                    "id": 2024613978,
+                    "name": "LOVE 2000 (Cover)",
+                    "artists": [
+                        {
+                            "id": 52755791,
+                            "name": "桃星愛花",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        }
+                    ],
+                    "album": {
+                        "id": 160557070,
+                        "name": "みんなのどまんなか！",
+                        "artist": {
+                            "id": 0,
+                            "name": "",
+                            "picUrl": null,
+                            "alias": [],
+                            "albumSize": 0,
+                            "picId": 0,
+                            "fansGroup": null,
+                            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "img1v1": 0,
+                            "trans": null
+                        },
+                        "publishTime": 1677427200000,
+                        "size": 5,
+                        "copyrightId": 1418220,
+                        "status": 1,
+                        "picId": 109951168376148406,
+                        "mark": 0
+                    },
+                    "duration": 260205,
+                    "copyrightId": 1418220,
+                    "status": 0,
+                    "alias": [],
+                    "rtype": 0,
+                    "ftype": 0,
+                    "mvid": 0,
+                    "fee": 8,
+                    "rUrl": null,
+                    "mark": 270336
+                }
+            ],
+            "hasMore": true,
+            "songCount": 300
+        },
+        "code": 200
+    }
+}

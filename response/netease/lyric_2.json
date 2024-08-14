@@ -1,0 +1,30 @@
+{
+    "code": 200,
+    "msg": "操作成功",
+    "data": {
+        "sgc": false,
+        "sfy": false,
+        "qfy": false,
+        "transUser": {
+            "id": 4105322,
+            "status": 99,
+            "demand": 1,
+            "userid": 82802107,
+            "nickname": "切尔西的匕首",
+            "uptime": 1484284862309
+        },
+        "lrc": {
+            "version": 11,
+            "lyric": "[00:00.00] 作词 : Nick Long/CJ Baran/TAKA\n[00:01.00] 作曲 : Nick Long/CJ Baran/TAKA\n[00:02.00] 制作人 : Mike Shinoda\n[00:03.66]\n[00:11.49]Remember that night\n[00:13.86]I had to leave you\n[00:16.28]You said it's alright\n[00:18.65]And I believed you\n[00:21.17]You know I'm no good\n[00:23.53]No good at goodbyes\n[00:26.01]No good without you\n[00:28.44]Better by your side\n[00:33.45]Wish I could be there with you\n[00:38.31]I'm feeling lost without you\n[00:42.18]In this empty bed\n[00:44.54]Where I'm all alone\n[00:47.19]I've been such a mess\n[00:49.56]Need a one way ticket\n[00:52.09]Anywhere you are\n[00:54.25]Is where I want to go\n[00:56.98]You are my address\n[00:59.63]I don't care how I get it\n[01:02.22]I need a one way ticket\n[01:03.69]Home\n[01:07.14]Need a one way ticket\n[01:08.64]Home\n[01:12.57]When you're not with me\n[01:15.05]These days are boring\n[01:17.42]Wish it were easy\n[01:19.91]Like Sunday morning\n[01:22.37]When I'd be waking up with you\n[01:24.88]Only doing those things we wanna do\n[01:27.29]My heart is anywhere you go\n[01:30.10]When I'm next to you I'm home\n[01:34.68]Wish I could be there with you\n[01:39.56]I'm feeling lost without you\n[01:43.42]In this empty bed\n[01:45.91]Where I'm all alone\n[01:48.39]I've been such a mess\n[01:51.17]Need a one way ticket\n[01:53.32]Anywhere you are\n[01:55.53]Is where I want to go\n[01:58.27]You are my address\n[02:00.77]I don't care how I get it\n[02:03.46]I need a one way ticket\n[02:04.97]Home\n[02:08.38]I need a one way ticket\n[02:10.01]Home\n[02:13.55]One way ticket\n[02:14.70]Home\n[02:18.21]I need a one way ticket\n[02:19.58]Home\n[02:34.95]In this empty bed\n[02:36.82]\n[02:37.45]Where I'm all alone\n[02:39.85]I've been such a mess\n[02:42.54]I've been such a mess\n[02:44.46]\n[02:47.10]In this empty bed\n[02:49.48]Where I'm all alone\n[02:52.10]I've been such a mess\n[02:54.05]\n[02:54.67]Need a one way ticket\n[02:56.36]\n[02:56.97]Anywhere you are\n[02:59.16]Is where I want to go\n[03:01.87]You are my address\n[03:03.90]\n[03:04.52]I don't care how I get it\n[03:06.00]\n[03:07.10]I need a one way ticket\n[03:08.57]Home\n[03:12.60]One way ticket\n[03:13.29]Home\n[03:15.08]\n[03:16.84]I need a one way ticket\n[03:18.39]Home\n[03:19.42]\n[03:21.79]Oh\n[03:23.45]Oh oh\n[03:25.23]\n[03:26.65]I don't care how I get it\n[03:27.98]\n[03:29.21]I need a one way ticket\n[03:30.61]Home\n"
+        },
+        "klyric": {
+            "version": 0,
+            "lyric": ""
+        },
+        "tlyric": {
+            "version": 5,
+            "lyric": "[by:切尔西的匕首]\n[00:11.49]记得那晚\n[00:13.86]我得离开你\n[00:16.28]你说没事\n[00:18.65]我信了你的话\n[00:21.17]你清楚我不擅长\n[00:23.53]不擅长说再见\n[00:26.01]没了你也不好过\n[00:28.44]最好待在你身畔\n[00:33.45]希望能一直陪着你\n[00:38.31]没了你，我迷失自我\n[00:42.18]躺在空荡荡的床上\n[00:44.54]我独身一人\n[00:47.19]我混乱不堪\n[00:49.56]只需要一张单程票\n[00:52.09]通向你所在的地方\n[00:54.25]那就是我梦想的彼岸\n[00:56.98]你就是我的目的地\n[00:59.63]我不在乎我该怎么做才能得到它\n[01:02.22]我只需要一张单程票\n[01:03.69]回家\n[01:07.14]只需要一张单程票\n[01:08.64]回家\n[01:12.57]当你不在我身边\n[01:15.05]这些时日枯燥无味\n[01:17.42]希望能变得轻松些\n[01:19.91]像周日的清晨那般\n[01:22.37]当我跟你一同醒来\n[01:24.88]只做那些你我想做的事情\n[01:27.29]你想去的地方也只有我的心底\n[01:30.10]当我倚在你的身旁，你让我有家的感觉\n[01:34.68]希望能一直陪着你\n[01:39.56]没了你，我迷失自我\n[01:43.42]躺在空荡荡的床上\n[01:45.91]我独身一人\n[01:48.39]我混乱不堪\n[01:51.17]只需要一张单程票\n[01:53.32]通向你所在的地方\n[01:55.53]那就是我梦想的彼岸\n[01:58.27]你就是我的目的地\n[02:00.77]我不在乎我该怎么做才能得到它\n[02:03.46]我只需要一张单程票\n[02:04.97]回家\n[02:08.38]我只需要一张单程票\n[02:10.01]回家\n[02:13.55]单程票\n[02:14.70]回家\n[02:18.21]我只需要一张单程票\n[02:19.58]回家\n[02:34.95]躺在空荡荡的床上\n[02:37.45]我独身一人\n[02:39.85]我混乱不堪\n[02:42.54]我混乱不堪\n[02:47.10]躺在空荡荡的床上\n[02:49.48]我独身一人\n[02:52.10]我混乱不堪\n[02:54.67]只需要一张单程票\n[02:56.97]通向你所在的地方\n[02:59.16]那就是我梦想的彼岸\n[03:01.87]你就是我的目的地\n[03:04.52]我不在乎我该怎么做才能得到它\n[03:07.10]我只需要一张单程票\n[03:08.57]回家\n[03:12.60]单程票\n[03:13.29]回家\n[03:16.84]我只需要一张单程票\n[03:18.39]回家\n[03:21.79]\n[03:23.45]\n[03:26.65]我不在乎我该怎么做才能得到它\n[03:29.21]我只需要一张单程票\n[03:30.61]回家\n"
+        },
+        "code": 200
+    }
+}
